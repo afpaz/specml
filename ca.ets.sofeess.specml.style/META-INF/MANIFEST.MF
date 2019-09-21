@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpecML Profile Style
+Bundle-SymbolicName: ca.ets.sofeess.specml.style;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ca.ets.sofeess.specml.style.Activator
+Bundle-Vendor: École de Technologie Supérieure
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.12.0",
+ org.eclipse.emf.common.ui;bundle-version="2.12.0",
+ org.eclipse.papyrus.infra.core;bundle-version="3.0.1",
+ ca.ets.sofeess.specml.profile;bundle-version="1.0.0",
+ org.eclipse.papyrus.infra.gmfdiag.css
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: ca.ets.sofeess.specml.style

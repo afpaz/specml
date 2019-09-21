@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpecML Tables
+Bundle-SymbolicName: ca.ets.sofeess.specml.tables;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ca.ets.sofeess.specml.tables.Activator
+Bundle-Vendor: École de Technologie Supérieure
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.papyrus.infra.nattable,
+ org.eclipse.papyrus.uml.nattable;bundle-version="5.0.0",
+ ca.ets.sofeess.specml.profile;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: ca.ets.sofeess.specml.tables

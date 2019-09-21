@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" xmlns:genmodel_1="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ca.ets.sofeess.specml.profile/src-gen" editDirectory="/ca.ets.sofeess.specml.profile.edit/src-gen"
+    modelPluginID="ca.ets.sofeess.specml.profile" modelName="SpecML" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/ca.ets.sofeess.specml.profile.tests/src-gen" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="genmodel_1:GenPackage ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore genmodel_1:GenPackage ../../org.eclipse.uml2.types/model/Types.genmodel#//types genmodel_1:GenPackage ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations xmi:type="genmodel_1:GenAnnotation" source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details xmi:type="ecore:EStringToStringMapEntry" key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="PROPERTY_DEFAULT_EXPRESSIONS"
+        value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_FEATURE_INHERITANCE"
+        value="DISCARD"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="COMMENTS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DERIVED_FEATURES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_OPERATION_INHERITANCE"
+        value="DISCARD"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="REDEFINING_OPERATIONS"
+        value="REPORT"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="INVARIANT_CONSTRAINTS"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="UNION_PROPERTIES" value="REPORT"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="SUBSETTING_PROPERTIES"
+        value="REPORT"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="OPERATION_BODIES" value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="REDEFINING_PROPERTIES"
+        value="REPORT"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>specml.profile.uml</foreignModel>
+  <genPackages xmi:type="genmodel:GenPackage" prefix="SpecML" basePackage="ca.ets.sofeess"
+      disposableProviderFactory="true" ecorePackage="ecore:EPackage specml.ecore#/">
+    <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum specml.ecore#//RequirementType">
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementType/StructuralRequirement"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementType/BehaviouralRequirement"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementType/MixedRequirement"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementType/OtherRequirementType"/>
+    </genEnums>
+    <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum specml.ecore#//Source">
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Acquirer"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Operator"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/CertificationAuthority"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/SpecialtyEngineer"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/OtherStakeholder"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/CertificationStandard"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Safety"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Costs"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/EnvironmentalConditions"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Design"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Production"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Tests"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/Maintenance"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//Source/OtherSource"/>
+    </genEnums>
+    <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum specml.ecore#//RequirementStatus">
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementStatus/PendingReview"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementStatus/ReviewedAndAccepted"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//RequirementStatus/ReviewedAndIncorrect"/>
+    </genEnums>
+    <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum specml.ecore#//ConstraintKind">
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//ConstraintKind/required"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//ConstraintKind/offered"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//ConstraintKind/contract"/>
+    </genEnums>
+    <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum specml.ecore#//EventKind">
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//EventKind/start"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//EventKind/finish"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//EventKind/send"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//EventKind/receive"/>
+      <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral specml.ecore#//EventKind/consume"/>
+    </genEnums>
+    <genClasses xmi:type="genmodel:GenClass" image="false" ecoreClass="ecore:EClass specml.ecore#//Requirement">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/base_Class"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/id"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/text"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/type"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/source"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/isDerived"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/isStable"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/creationDate"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/modificationDate"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/revision"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/status"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/isVerifiable"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/isConsistent"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/isFormalizable"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/refinedBy"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/refinedFrom"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/coupledTo"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/copiedFrom"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Requirement/derivedFrom"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Requirement/formalizedAs"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/OnlyOneRequirementSubtype">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/OnlyOneRequirementSubtype/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/OnlyOneRequirementSubtype/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/IDMustBeUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/IDMustBeUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/IDMustBeUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/RationaleIsRequired">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/RationaleIsRequired/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/RationaleIsRequired/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/NoNestedClassifiers">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoNestedClassifiers/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoNestedClassifiers/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/NoAssociations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoAssociations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoAssociations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/NoGeneralizations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoGeneralizations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoGeneralizations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/NoOwnedAttributes">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoOwnedAttributes/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoOwnedAttributes/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/NoOwnedOperations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoOwnedOperations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/NoOwnedOperations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/IfCopyTextIsReadOnly">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/IfCopyTextIsReadOnly/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/IfCopyTextIsReadOnly/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/PropertyBasedStatementSupplier">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/PropertyBasedStatementSupplier/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/PropertyBasedStatementSupplier/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Requirement/RequirementFormalizationIsRequired">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/RequirementFormalizationIsRequired/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Requirement/RequirementFormalizationIsRequired/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//SystemRequirement">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//SystemRequirement/allocatedToSoftware"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//SystemRequirement/CoupledWithAnotherSRATS">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//SystemRequirement/CoupledWithAnotherSRATS/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//SystemRequirement/CoupledWithAnotherSRATS/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//HighLevelRequirement">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//HighLevelRequirement/precludesCFC"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//HighLevelRequirement/describesDesignDetail"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//HighLevelRequirement/describesVerificationDetail"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/TraceDependencyIsRequired">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/TraceDependencyIsRequired/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/TraceDependencyIsRequired/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/DerivedHLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DerivedHLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DerivedHLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/DesignDetailRequiresRationale">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DesignDetailRequiresRationale/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DesignDetailRequiresRationale/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/VerificationDetailRequiresRationale">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/VerificationDetailRequiresRationale/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/VerificationDetailRequiresRationale/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/CopyAnSRATS">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/CopyAnSRATS/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/CopyAnSRATS/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/CoupledWithAnotherHLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/CoupledWithAnotherHLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/CoupledWithAnotherHLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/DeriveAnHLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DeriveAnHLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/DeriveAnHLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//HighLevelRequirement/RefineAnSRATS">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/RefineAnSRATS/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//HighLevelRequirement/RefineAnSRATS/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//LowLevelRequirement">
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//LowLevelRequirement/RefineDependencyIsRequired">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/RefineDependencyIsRequired/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/RefineDependencyIsRequired/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//LowLevelRequirement/DerivedLLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/DerivedLLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/DerivedLLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//LowLevelRequirement/CoupledWithAnotherLLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/CoupledWithAnotherLLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/CoupledWithAnotherLLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//LowLevelRequirement/DeriveAnLLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/DeriveAnLLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/DeriveAnLLR/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//LowLevelRequirement/RefineAnHLR">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/RefineAnHLR/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//LowLevelRequirement/RefineAnHLR/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Coupled"/>
+    <genClasses xmi:type="genmodel:GenClass" image="false" ecoreClass="ecore:EClass specml.ecore#//Trace">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Trace/base_Dependency"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Trace/DependencyClientIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/DependencyClientIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/DependencyClientIsUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Trace/DependencySupplierIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/DependencySupplierIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/DependencySupplierIsUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Trace/RequirementClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/RequirementClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Trace/RequirementClient/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//RefineReqt">
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//RefineReqt/ClientIsNotADerivedRequirement">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//RefineReqt/ClientIsNotADerivedRequirement/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//RefineReqt/ClientIsNotADerivedRequirement/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//RefineReqt/SupplierIsNotADerivedRequirement">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//RefineReqt/SupplierIsNotADerivedRequirement/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//RefineReqt/SupplierIsNotADerivedRequirement/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Copy">
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Copy/HLRClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Copy/HLRClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Copy/HLRClient/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Derive">
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Derive/DerivedRequirementClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Derive/DerivedRequirementClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Derive/DerivedRequirementClient/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//PropertyBasedStatement">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//PropertyBasedStatement/id"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//PropertyBasedStatement/text"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//PropertyBasedStatement/base_Class"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//PropertyBasedStatement/condition"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//PropertyBasedStatement/predicate"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//PropertyBasedStatement/statement"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//PropertyBasedStatement/formalizationFor"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoNestedClassifiers">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoNestedClassifiers/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoNestedClassifiers/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoAssociations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoAssociations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoAssociations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoGeneralizations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoGeneralizations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoGeneralizations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoOwnedAttributes">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOwnedAttributes/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOwnedAttributes/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoOwnedOperations">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOwnedOperations/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOwnedOperations/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/NoOtherStereotype">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOtherStereotype/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/NoOtherStereotype/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/IDMustBeUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/IDMustBeUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/IDMustBeUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//PropertyBasedStatement/ConstraintBlockSupplier">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/ConstraintBlockSupplier/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//PropertyBasedStatement/ConstraintBlockSupplier/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//TimedDomain">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//TimedDomain/base_Namespace"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//TimedEvent">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//TimedEvent/repetition"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//TimedEvent/every"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//TimedEvent/base_Class"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//TimedEvent/AppliedOnPropertyBasedStatement">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedEvent/AppliedOnPropertyBasedStatement/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedEvent/AppliedOnPropertyBasedStatement/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//TimedEvent/ContainedInTimedDomainNamespace">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedEvent/ContainedInTimedDomainNamespace/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedEvent/ContainedInTimedDomainNamespace/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//TimedDurationConstraint">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//TimedDurationConstraint/base_Constraint"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//TimedDurationConstraint/kind"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//TimedDurationConstraint/ContainedInTimedDomainNamespace">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedDurationConstraint/ContainedInTimedDomainNamespace/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedDurationConstraint/ContainedInTimedDomainNamespace/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//TimedInstantObservation">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//TimedInstantObservation/obsKind"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//TimedInstantObservation/base_Class"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//TimedInstantObservation/AppliedOnPropertyBasedStatement">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedInstantObservation/AppliedOnPropertyBasedStatement/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedInstantObservation/AppliedOnPropertyBasedStatement/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//TimedInstantObservation/ContainedInTimedDomainNamespace">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedInstantObservation/ContainedInTimedDomainNamespace/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//TimedInstantObservation/ContainedInTimedDomainNamespace/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Formalization">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Formalization/base_Dependency"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Formalization/RequirementClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/RequirementClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/RequirementClient/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Formalization/DependencySupplierIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/DependencySupplierIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/DependencySupplierIsUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Formalization/DependencyClientIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/DependencyClientIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Formalization/DependencyClientIsUnique/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Condition">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Condition/base_Dependency"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Condition/PropertyBasedStatementClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/PropertyBasedStatementClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/PropertyBasedStatementClient/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Condition/DependencySupplierIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/DependencySupplierIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/DependencySupplierIsUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Condition/DependencyClientIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/DependencyClientIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Condition/DependencyClientIsUnique/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Predicate">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//Predicate/base_Dependency"/>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Predicate/PropertyBasedStatementClient">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/PropertyBasedStatementClient/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/PropertyBasedStatementClient/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Predicate/DependencySupplierIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/DependencySupplierIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/DependencySupplierIsUnique/context"/>
+      </genOperations>
+      <genOperations xmi:type="genmodel:GenOperation" ecoreOperation="ecore:EOperation specml.ecore#//Predicate/DependencyClientIsUnique">
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/DependencyClientIsUnique/diagnostics"/>
+        <genParameters xmi:type="genmodel:GenParameter" ecoreParameter="ecore:EParameter specml.ecore#//Predicate/DependencyClientIsUnique/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//Spec">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//SpecML/base_Package"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" image="false" ecoreClass="ecore:EClass specml.ecore#//Data">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/description"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/rationale"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/displayName"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/source"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/creationNotes"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/maintenanceNotes"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/usageNotes"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/creationDate"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/modificationDate"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//Data/revision"/>
+      <genFeatures xmi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference specml.ecore#//Data/otherMetadata"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//DataAttribute">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//DataAttribute/name"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//DataAttribute/value"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//FieldData">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/possibleValues"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/format"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/length"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/defaultValue"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/isRequired"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/isReadOnly"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/isUnique"/>
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute specml.ecore#//FieldData/encoding"/>
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//FieldData/base_Property"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass specml.ecore#//EntityData">
+      <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference specml.ecore#//EntityData/base_Class"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpecML Properties
+Bundle-SymbolicName: ca.ets.sofeess.specml.properties;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ca.ets.sofeess.specml.properties.Activator
+Bundle-Vendor: École de Technologie Supérieure
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.papyrus.views.properties;bundle-version="4.0.0",
+ org.eclipse.papyrus.infra.constraints.edit;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.constraints.ui;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.properties.edit;bundle-version="3.0.0",
+ ca.ets.sofeess.specml.profile;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: ca.ets.sofeess.specml.properties,
+ ca.ets.sofeess.specml.properties.internal

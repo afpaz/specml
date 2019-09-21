@@ -1,0 +1,366 @@
+/* Copyright (c) 2016-2019 ÉTS
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *     
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+* {
+	svgCssFile: 'platform:/plugin/ca.ets.sofeess.specml.style/resources/theme_svg.css'; /* The stylesheet to apply to all SVG Images */
+}
+
+/*********************************************************************************************/
+/* SRATS                                                                                     */
+/*********************************************************************************************/
+
+[appliedStereotypes~=SystemRequirement] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/srats.svg';
+	/*fillColor: #941100; /* RGB Function for Dim Grey */
+	/*svgCssClass: srats;*/
+}
+
+Class[appliedStereotypes~=SystemRequirement] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=SystemRequirement] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=SystemRequirement] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: false;
+}
+
+Class[appliedStereotypes~=SystemRequirement] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=SystemRequirement] > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+/*********************************************************************************************/
+/* HLR                                                                                       */
+/*********************************************************************************************/
+
+[appliedStereotypes~=HighLevelRequirement] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/hlr.svg';
+	/*fillColor: #005493; /* All CSS Color Names: http://www.w3schools.com/cssref/css_colornames.asp */
+	/*svgCssClass: hlr;*/
+}
+
+Class[appliedStereotypes~=HighLevelRequirement] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=HighLevelRequirement] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=HighLevelRequirement] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: false;
+}
+
+Class[appliedStereotypes~=HighLevelRequirement] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=HighLevelRequirement] > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+/*********************************************************************************************/
+/* LLR                                                                                       */
+/*********************************************************************************************/
+
+[appliedStereotypes~=LowLevelRequirement] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/llr.svg';
+	/*fillColor: #009051; /* HTML Code for Dark Green */
+	/*svgCssClass: llr;*/
+}
+
+Class[appliedStereotypes~=LowLevelRequirement] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=LowLevelRequirement] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=LowLevelRequirement] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: false;
+}
+
+Class[appliedStereotypes~=LowLevelRequirement] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=LowLevelRequirement] > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+/*********************************************************************************************/
+/* Timed Instant Observation                                                                 */
+/*********************************************************************************************/
+
+/*[appliedStereotypes~=TimedInstantObservation] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/timed.svg';
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] > Comment {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: true;
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedInstantObservation] > Label[type=StereotypeLabel] {
+	visible: false;
+}*/
+
+/*********************************************************************************************/
+/* Timed Duration Constraint                                                                 */
+/*********************************************************************************************/
+
+/*[appliedStereotypes~=TimedDurationConstraint] {
+	elementIcon: false;
+	shapeVisibility: true;
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/timed.svg';
+	canonical: true;
+}*/
+
+/*********************************************************************************************/
+/* Timed Event                                                                               */
+/*********************************************************************************************/
+
+/*[appliedStereotypes~=TimedEvent] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/timed.svg';
+}
+
+Class[appliedStereotypes~=TimedEvent] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=TimedEvent] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedEvent] > Comment {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedEvent] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: true;
+}
+
+Class[appliedStereotypes~=TimedEvent] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=TimedEvent] > Label[type=StereotypeLabel] {
+	visible: false;
+}*/
+
+/*********************************************************************************************/
+/* Timed Domain                                                                              */
+/*********************************************************************************************/
+
+[appliedStereotypes~=TimedDomain] {
+	elementIcon: false;
+	shapeVisibility: true;
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/timed.svg';
+	canonical: true;
+}
+
+/*********************************************************************************************/
+/* Property-Based Statement                                                                  */
+/*********************************************************************************************/
+
+[appliedStereotypes~=PropertyBasedStatement] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/pbs.svg';
+}
+
+Class[appliedStereotypes~=PropertyBasedStatement] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=PropertyBasedStatement] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=PropertyBasedStatement] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: false;
+}
+
+Class[appliedStereotypes~=PropertyBasedStatement] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=PropertyBasedStatement] > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+/*********************************************************************************************/
+/* Constraint Block                                                                          */
+/*********************************************************************************************/
+
+[appliedStereotypes~=ConstraintBlock] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/constraint.svg';
+}
+
+Class[appliedStereotypes~=ConstraintBlock] > Compartment {
+	visible: false;
+}
+
+Class[appliedStereotypes~=ConstraintBlock] > Compartment[kind=symbol] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=ConstraintBlock] {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: true;
+	elementIcon: false;
+	isFloatingLabelConstrained: false;
+}
+
+Class[appliedStereotypes~=ConstraintBlock] > Label[kind="FloatingLabel"] {
+	visible: true;
+}
+
+Class[appliedStereotypes~=ConstraintBlock] > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+/*********************************************************************************************/
+/* Dependencies                                                                              */
+/*********************************************************************************************/
+
+Dependency[appliedStereotypes~=Formalization] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=Predicate] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=Condition] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=Copy] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=Derive] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=RefineReqt] >  Label:name {
+	visible: false;
+}
+
+Dependency[appliedStereotypes~=Coupled] >  Label:name {
+	visible: false;
+}
+
+/*********************************************************************************************/
+/* Package                                                                                   */
+/*********************************************************************************************/
+
+[appliedStereotypes~=Spec] {
+	svgFile: 'platform:/plugin/ca.ets.sofeess.specml.style/icons/package.svg';
+}
+
+Package {
+	shapeDirection: 2; /* Top-Right to avoid overlapping with Name */
+}
+
+.showSymbol Compartment {
+	visible: false;
+}
+
+.showSymbol Compartment[kind=symbol] {
+	visible: true;
+}
+
+.showSymbol, .showSymbol * {
+	transparency: 100;
+	displayName: false;
+	displayBorder: false;
+	maintainSymbolRatio: false;
+	followSVGSymbol: true;
+	elementIcon: true;
+}
+
+/** Specific settings for Packages, because they should display their internal contents */
+
+Package.showSymbol > Compartment[kind=symbol] {
+	visible: false;
+}
+
+.showSymbol > Label[type=StereotypeLabel] {
+	visible: true;
+}
+
+Package.showSymbol {
+	displayBorder:true;
+	transparency: 0;
+	lineWidth:2;
+}
+
+.showSymbol > Label[kind="FloatingLabel"] {
+	visible:true;
+}

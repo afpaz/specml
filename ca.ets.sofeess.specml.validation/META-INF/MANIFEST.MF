@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpecML Profile Validation
+Bundle-SymbolicName: ca.ets.sofeess.specml.validation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: École de Technologie Supérieure
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.13.0",
+ org.eclipse.emf.validation,
+ org.eclipse.papyrus.uml.service.validation,
+ org.eclipse.uml2.uml,
+ ca.ets.sofeess.specml.profile,
+ org.eclipse.ui.workbench
+Export-Package: ca.ets.sofeess.specml.validation,
+ ca.ets.sofeess.specml.validation.selectors
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: ca.ets.sofeess.specml.validation.Activator

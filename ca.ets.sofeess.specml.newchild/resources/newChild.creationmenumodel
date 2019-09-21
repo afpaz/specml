@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<ElementCreationMenuModel:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ElementCreationMenuModel="http://www.eclipse.org/papyrus/infra/newchild/elementcreationmenumodel" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:filters="http://www.eclipse.org/Papyrus/2014/common/filters" xmlns:umlfilters="http://www.eclipse.org/Papyrus/2014/uml/filters" label="SpecML" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/specml.gif">
+  <filter xsi:type="filters:CompoundFilter" filter="//@filter/@ownedFilter.0">
+    <ownedFilter xsi:type="umlfilters:ProfileApplied" name="isProfileApplied" profileQualifiedName="specml" profileURI="pathmap://SPECML_PROFILE/specml.profile.uml#_EohtkHMyEeiGk6p11I42Qw"/>
+  </filter>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Spec Package" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/package.png">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_IBM28H_SEeiBHb9GNlmRuQ"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:Folder" label="Requirements">
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="High-Level Requirement" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/hlr.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_qFg2QH7UEei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="System Requirement" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/srats.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_qFg2Qn7UEei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Low-Level Requirement" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/llr.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_ualdcH7yEei8aYA-LLTcPA"/>
+    </menu>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:Folder" label="Traces">
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="RefineReqt" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_FDg1UH73Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Derive" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_6JKLIH73Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Copy" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_WoIioH73Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Coupled" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_yPG7IH72Eei8aYA-LLTcPA"/>
+    </menu>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:Folder" label="Formalization">
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Property-Based Statement" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/pbs.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_f3vXsH71Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Formalization" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_nefJ0H75Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Condition" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_Yqns4H75Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreateRelationshipMenu" label="Predicate" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_Qsa8sH74Eei8aYA-LLTcPA"/>
+    </menu>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:Folder" label="Timing">
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Timed Instant Observation" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_5PjXsH75Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Timed Duration Constraint" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_Y5qZAH76Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Timed Event" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_HpVgsH76Eei8aYA-LLTcPA"/>
+    </menu>
+    <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Timed Domain" icon="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+      <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specml.elementtypesconfigurations#_tCfIcH76Eei8aYA-LLTcPA"/>
+    </menu>
+  </menu>
+</ElementCreationMenuModel:Folder>

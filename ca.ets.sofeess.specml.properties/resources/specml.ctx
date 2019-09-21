@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constraints="http://www.eclipse.org/papyrus/constraints/0.9" xmlns:contexts="http://www.eclipse.org/papyrus/properties/contexts/0.9" xmi:id="_3J2NAADuEemEP4614qtm6g" name="SpecML">
+  <dependencies href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_69QJkKDJEeSZxfCXzZz3-w"/>
+  <tabs xmi:id="__Q1iQADuEemEP4614qtm6g" label="SpecML" id="spec" image="" priority="1">
+    <sections xmi:id="__Q2wYADuEemEP4614qtm6g" name="Single Formalization" sectionFile="ui/SingleFormalization.xwt">
+      <widget href="ui/SingleFormalization.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q2wYQDuEemEP4614qtm6g" name="Multiple Formalization" sectionFile="ui/MultipleFormalization.xwt">
+      <widget href="ui/MultipleFormalization.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q3XcADuEemEP4614qtm6g" name="Single Trace" sectionFile="ui/SingleTrace.xwt">
+      <widget href="ui/SingleTrace.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q3XcQDuEemEP4614qtm6g" name="Multiple Trace" sectionFile="ui/MultipleTrace.xwt">
+      <widget href="ui/MultipleTrace.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q3-gADuEemEP4614qtm6g" name="Single PropertyBasedStatement" sectionFile="ui/SinglePropertyBasedStatement.xwt">
+      <widget href="ui/SinglePropertyBasedStatement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q3-gQDuEemEP4614qtm6g" name="Multiple PropertyBasedStatement" sectionFile="ui/MultiplePropertyBasedStatement.xwt">
+      <widget href="ui/MultiplePropertyBasedStatement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q3-ggDuEemEP4614qtm6g" name="Single Predicate" sectionFile="ui/SinglePredicate.xwt">
+      <widget href="ui/SinglePredicate.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q4lkADuEemEP4614qtm6g" name="Multiple Predicate" sectionFile="ui/MultiplePredicate.xwt">
+      <widget href="ui/MultiplePredicate.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q4lkQDuEemEP4614qtm6g" name="Single TimedInstantObservation" sectionFile="ui/SingleTimedInstantObservation.xwt">
+      <widget href="ui/SingleTimedInstantObservation.xwt#/"/>
+    </sections>
+    <sections xmi:id="__Q4lkgDuEemEP4614qtm6g" name="Multiple TimedInstantObservation" sectionFile="ui/MultipleTimedInstantObservation.xwt">
+      <widget href="ui/MultipleTimedInstantObservation.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RAhYADuEemEP4614qtm6g" name="Single SystemRequirement" sectionFile="ui/SingleSystemRequirement.xwt">
+      <widget href="ui/SingleSystemRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RBvgADuEemEP4614qtm6g" name="Multiple SystemRequirement" sectionFile="ui/MultipleSystemRequirement.xwt">
+      <widget href="ui/MultipleSystemRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RCWkADuEemEP4614qtm6g" name="Single Requirement" sectionFile="ui/SingleRequirement.xwt">
+      <widget href="ui/SingleRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RC9oADuEemEP4614qtm6g" name="Multiple Requirement" sectionFile="ui/MultipleRequirement.xwt">
+      <widget href="ui/MultipleRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RDksADuEemEP4614qtm6g" name="Single Condition" sectionFile="ui/SingleCondition.xwt">
+      <widget href="ui/SingleCondition.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RDksQDuEemEP4614qtm6g" name="Multiple Condition" sectionFile="ui/MultipleCondition.xwt">
+      <widget href="ui/MultipleCondition.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RDksgDuEemEP4614qtm6g" name="Single Copy" sectionFile="ui/SingleCopy.xwt">
+      <widget href="ui/SingleCopy.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RDkswDuEemEP4614qtm6g" name="Multiple Copy" sectionFile="ui/MultipleCopy.xwt">
+      <widget href="ui/MultipleCopy.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RELwADuEemEP4614qtm6g" name="Single HighLevelRequirement" sectionFile="ui/SingleHighLevelRequirement.xwt">
+      <widget href="ui/SingleHighLevelRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RFZ4ADuEemEP4614qtm6g" name="Multiple HighLevelRequirement" sectionFile="ui/MultipleHighLevelRequirement.xwt">
+      <widget href="ui/MultipleHighLevelRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RFZ4QDuEemEP4614qtm6g" name="Single Coupled" sectionFile="ui/SingleCoupled.xwt">
+      <widget href="ui/SingleCoupled.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RFZ4gDuEemEP4614qtm6g" name="Multiple Coupled" sectionFile="ui/MultipleCoupled.xwt">
+      <widget href="ui/MultipleCoupled.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RFZ4wDuEemEP4614qtm6g" name="Single Derive" sectionFile="ui/SingleDerive.xwt">
+      <widget href="ui/SingleDerive.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RFZ5ADuEemEP4614qtm6g" name="Multiple Derive" sectionFile="ui/MultipleDerive.xwt">
+      <widget href="ui/MultipleDerive.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RGA8ADuEemEP4614qtm6g" name="Single LowLevelRequirement" sectionFile="ui/SingleLowLevelRequirement.xwt">
+      <widget href="ui/SingleLowLevelRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RGoAADuEemEP4614qtm6g" name="Multiple LowLevelRequirement" sectionFile="ui/MultipleLowLevelRequirement.xwt">
+      <widget href="ui/MultipleLowLevelRequirement.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPEADuEemEP4614qtm6g" name="Single RefineReqt" sectionFile="ui/SingleRefineReqt.xwt">
+      <widget href="ui/SingleRefineReqt.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPEQDuEemEP4614qtm6g" name="Multiple RefineReqt" sectionFile="ui/MultipleRefineReqt.xwt">
+      <widget href="ui/MultipleRefineReqt.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPEgDuEemEP4614qtm6g" name="Single Spec" sectionFile="ui/SingleSpec.xwt">
+      <widget href="ui/SingleSpec.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPEwDuEemEP4614qtm6g" name="Multiple Spec" sectionFile="ui/MultipleSpec.xwt">
+      <widget href="ui/MultipleSpec.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPFADuEemEP4614qtm6g" name="Single TimedEvent" sectionFile="ui/SingleTimedEvent.xwt">
+      <widget href="ui/SingleTimedEvent.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPFQDuEemEP4614qtm6g" name="Multiple TimedEvent" sectionFile="ui/MultipleTimedEvent.xwt">
+      <widget href="ui/MultipleTimedEvent.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RHPFgDuEemEP4614qtm6g" name="Single TimedDomain" sectionFile="ui/SingleTimedDomain.xwt">
+      <widget href="ui/SingleTimedDomain.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RH2IADuEemEP4614qtm6g" name="Multiple TimedDomain" sectionFile="ui/MultipleTimedDomain.xwt">
+      <widget href="ui/MultipleTimedDomain.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RH2IQDuEemEP4614qtm6g" name="Single TimedDurationConstraint" sectionFile="ui/SingleTimedDurationConstraint.xwt">
+      <widget href="ui/SingleTimedDurationConstraint.xwt#/"/>
+    </sections>
+    <sections xmi:id="__RH2IgDuEemEP4614qtm6g" name="Multiple TimedDurationConstraint" sectionFile="ui/MultipleTimedDurationConstraint.xwt">
+      <widget href="ui/MultipleTimedDurationConstraint.xwt#/"/>
+    </sections>
+  </tabs>
+  <views xmi:id="_3J2NDQDuEemEP4614qtm6g" name="Single PropertyBasedStatement" sections="__Q3-gADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NmQDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NDgDuEemEP4614qtm6g" name="isSinglePropertyBasedStatement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NDwDuEemEP4614qtm6g" name="stereotypeName" value="specml::PropertyBasedStatement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NEADuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple PropertyBasedStatement" sections="__Q3-gQDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NmQDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NEQDuEemEP4614qtm6g" name="isMultiplePropertyBasedStatement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NEgDuEemEP4614qtm6g" name="stereotypeName" value="specml::PropertyBasedStatement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NGQDuEemEP4614qtm6g" name="Single TimedInstantObservation" sections="__Q4lkQDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NlADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NGgDuEemEP4614qtm6g" name="isSingleTimedInstantObservation">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NGwDuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedInstantObservation"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NHADuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple TimedInstantObservation" sections="__Q4lkgDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NlADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NHQDuEemEP4614qtm6g" name="isMultipleTimedInstantObservation">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NHgDuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedInstantObservation"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NHwDuEemEP4614qtm6g" name="Single SystemRequirement" sections="__RAhYADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NdADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NIADuEemEP4614qtm6g" name="isSingleSystemRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NIQDuEemEP4614qtm6g" name="stereotypeName" value="specml::SystemRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NIgDuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple SystemRequirement" sections="__RBvgADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NdADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NIwDuEemEP4614qtm6g" name="isMultipleSystemRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NJADuEemEP4614qtm6g" name="stereotypeName" value="specml::SystemRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NJQDuEemEP4614qtm6g" name="Single Requirement" sections="__RCWkADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NdgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NJgDuEemEP4614qtm6g" name="isSingleRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NJwDuEemEP4614qtm6g" name="stereotypeName" value="specml::Requirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NKADuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple Requirement" sections="__RC9oADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NdgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NKQDuEemEP4614qtm6g" name="isMultipleRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NKgDuEemEP4614qtm6g" name="stereotypeName" value="specml::Requirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NNwDuEemEP4614qtm6g" name="Single HighLevelRequirement" sections="__RELwADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NjgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NOADuEemEP4614qtm6g" name="isSingleHighLevelRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NOQDuEemEP4614qtm6g" name="stereotypeName" value="specml::HighLevelRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NOgDuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple HighLevelRequirement" sections="__RFZ4ADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NjgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NOwDuEemEP4614qtm6g" name="isMultipleHighLevelRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NPADuEemEP4614qtm6g" name="stereotypeName" value="specml::HighLevelRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NSQDuEemEP4614qtm6g" name="Single LowLevelRequirement" sections="__RGA8ADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NjADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NSgDuEemEP4614qtm6g" name="isSingleLowLevelRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NSwDuEemEP4614qtm6g" name="stereotypeName" value="specml::LowLevelRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NTADuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple LowLevelRequirement" sections="__RGoAADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NjADuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NTQDuEemEP4614qtm6g" name="isMultipleLowLevelRequirement">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NTgDuEemEP4614qtm6g" name="stereotypeName" value="specml::LowLevelRequirement"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NWwDuEemEP4614qtm6g" name="Single TimedEvent" sections="__RHPFADuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NlgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NXADuEemEP4614qtm6g" name="isSingleTimedEvent">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NXQDuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedEvent"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NXgDuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple TimedEvent" sections="__RHPFQDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NlgDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NXwDuEemEP4614qtm6g" name="isMultipleTimedEvent">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NYADuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedEvent"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NZwDuEemEP4614qtm6g" name="Single TimedDurationConstraint" sections="__RH2IQDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NbwDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NaADuEemEP4614qtm6g" name="isSingleTimedDurationConstraint">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NaQDuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedDurationConstraint"/>
+    </constraints>
+  </views>
+  <views xmi:id="_3J2NagDuEemEP4614qtm6g" elementMultiplicity="-1" name="Multiple TimedDurationConstraint" sections="__RH2IgDuEemEP4614qtm6g" automaticContext="true" datacontexts="_3J2NbwDuEemEP4614qtm6g">
+    <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_3J2NawDuEemEP4614qtm6g" name="isMultipleTimedDurationConstraint">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" xmi:id="_3J2NbADuEemEP4614qtm6g" name="stereotypeName" value="specml::TimedDurationConstraint"/>
+    </constraints>
+  </views>
+  <dataContexts xmi:id="_3J2NbQDuEemEP4614qtm6g" name="specml">
+    <elements xmi:id="_3J2NbgDuEemEP4614qtm6g" name="RefineReqt" supertypes="_3J2NigDuEemEP4614qtm6g"/>
+    <elements xmi:id="_3J2NbwDuEemEP4614qtm6g" name="TimedDurationConstraint">
+      <properties xmi:id="_3J2NcADuEemEP4614qtm6g" name="kind" type="Enumeration"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xsqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NcQDuEemEP4614qtm6g" name="Predicate">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xmqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NcgDuEemEP4614qtm6g" name="Coupled" supertypes="_3J2NigDuEemEP4614qtm6g"/>
+    <elements xmi:id="_3J2NcwDuEemEP4614qtm6g" name="Spec">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xiaDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NdADuEemEP4614qtm6g" name="SystemRequirement" supertypes="_3J2NdgDuEemEP4614qtm6g">
+      <properties xmi:id="_3J2NdQDuEemEP4614qtm6g" name="allocatedToSoftware" type="Boolean"/>
+    </elements>
+    <elements xmi:id="_3J2NdgDuEemEP4614qtm6g" name="Requirement">
+      <properties xmi:id="_3J2NdwDuEemEP4614qtm6g" name="id"/>
+      <properties xmi:id="_3J2NeADuEemEP4614qtm6g" name="text"/>
+      <properties xmi:id="_3J2NeQDuEemEP4614qtm6g" name="type" type="Enumeration"/>
+      <properties xmi:id="_3J2NegDuEemEP4614qtm6g" name="source" type="Enumeration" multiplicity="-1"/>
+      <properties xmi:id="_3J2NewDuEemEP4614qtm6g" name="isDerived" type="Boolean"/>
+      <properties xmi:id="_3J2NfADuEemEP4614qtm6g" name="isStable" type="Boolean"/>
+      <properties xmi:id="_3J2NfQDuEemEP4614qtm6g" name="creationDate"/>
+      <properties xmi:id="_3J2NfgDuEemEP4614qtm6g" name="modificationDate"/>
+      <properties xmi:id="_3J2NfwDuEemEP4614qtm6g" name="revision" type="Integer"/>
+      <properties xmi:id="_3J2NgADuEemEP4614qtm6g" name="status" type="Enumeration"/>
+      <properties xmi:id="_3J2NgQDuEemEP4614qtm6g" name="isVerifiable" type="Boolean"/>
+      <properties xmi:id="_3J2NggDuEemEP4614qtm6g" name="isConsistent" type="Boolean"/>
+      <properties xmi:id="_3J2NgwDuEemEP4614qtm6g" name="isFormalizable" type="Boolean"/>
+      <properties xmi:id="_3J2NhADuEemEP4614qtm6g" name="refinedBy" type="Reference" multiplicity="-1"/>
+      <properties xmi:id="_3J2NhQDuEemEP4614qtm6g" name="refinedFrom" type="Reference" multiplicity="-1"/>
+      <properties xmi:id="_3J2NhgDuEemEP4614qtm6g" name="coupledTo" type="Reference" multiplicity="-1"/>
+      <properties xmi:id="_3J2NhwDuEemEP4614qtm6g" name="copiedFrom" type="Reference" multiplicity="-1"/>
+      <properties xmi:id="_3J2NiADuEemEP4614qtm6g" name="derivedFrom" type="Reference" multiplicity="-1"/>
+      <properties xmi:id="_3J2NiQDuEemEP4614qtm6g" name="formalizedAs" multiplicity="-1"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690yXqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NigDuEemEP4614qtm6g" name="Trace">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xmqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NiwDuEemEP4614qtm6g" name="Copy" supertypes="_3J2NigDuEemEP4614qtm6g"/>
+    <elements xmi:id="_3J2NjADuEemEP4614qtm6g" name="LowLevelRequirement" supertypes="_3J2NdgDuEemEP4614qtm6g"/>
+    <elements xmi:id="_3J2NjQDuEemEP4614qtm6g" name="TimedDomain">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xoqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NjgDuEemEP4614qtm6g" name="HighLevelRequirement" supertypes="_3J2NdgDuEemEP4614qtm6g">
+      <properties xmi:id="_3J2NjwDuEemEP4614qtm6g" name="precludesCFC" type="Boolean"/>
+      <properties xmi:id="_3J2NkADuEemEP4614qtm6g" name="describesDesignDetail" type="Boolean"/>
+      <properties xmi:id="_3J2NkQDuEemEP4614qtm6g" name="describesVerificationDetail" type="Boolean"/>
+    </elements>
+    <elements xmi:id="_3J2NkgDuEemEP4614qtm6g" name="Condition">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xmqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NkwDuEemEP4614qtm6g" name="Formalization">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690xmqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NlADuEemEP4614qtm6g" name="TimedInstantObservation">
+      <properties xmi:id="_3J2NlQDuEemEP4614qtm6g" name="obsKind" type="Enumeration"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690yXqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NlgDuEemEP4614qtm6g" name="TimedEvent">
+      <properties xmi:id="_3J2NlwDuEemEP4614qtm6g" name="repetition" type="Integer"/>
+      <properties xmi:id="_3J2NmADuEemEP4614qtm6g" name="every"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690yXqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NmQDuEemEP4614qtm6g" name="PropertyBasedStatement">
+      <properties xmi:id="_3J2NmgDuEemEP4614qtm6g" name="id"/>
+      <properties xmi:id="_3J2NmwDuEemEP4614qtm6g" name="text"/>
+      <properties xmi:id="_3J2NnADuEemEP4614qtm6g" name="condition"/>
+      <properties xmi:id="_3J2NnQDuEemEP4614qtm6g" name="predicate"/>
+      <properties xmi:id="_3J2NngDuEemEP4614qtm6g" name="statement"/>
+      <properties xmi:id="_3J2NnwDuEemEP4614qtm6g" name="formalizationFor" type="Reference" multiplicity="-1"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_690yXqDJEeSZxfCXzZz3-w"/>
+    </elements>
+    <elements xmi:id="_3J2NoADuEemEP4614qtm6g" name="Derive" supertypes="_3J2NigDuEemEP4614qtm6g"/>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@modelElementFactories.2"/>
+  </dataContexts>
+</contexts:Context>

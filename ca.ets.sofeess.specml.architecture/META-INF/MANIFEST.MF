@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpecML Architecture
+Bundle-SymbolicName: ca.ets.sofeess.specml.architecture;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ca.ets.sofeess.specml.architecture.Activator
+Bundle-Vendor: École de Technologie Supérieure
+Require-Bundle: org.eclipse.papyrus.uml.diagram.common;bundle-version="3.1.0",
+ org.eclipse.papyrus.uml.tools,
+ org.eclipse.papyrus.uml.diagram.wizards;bundle-version="3.0.1",
+ org.eclipse.papyrus.uml.architecture;bundle-version="1.1.100",
+ ca.ets.sofeess.specml.profile;bundle-version="0.1.0",
+ ca.ets.sofeess.specml.newchild;bundle-version="1.0.0",
+ ca.ets.sofeess.specml.style;bundle-version="1.0.0",
+ ca.ets.sofeess.specml.properties;bundle-version="1.0.0",
+ org.eclipse.papyrus.uml.tools.utils,
+ org.eclipse.papyrus.sysml14;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml14.architecture;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml14.diagram.blockdefinition;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml14.service.types;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml14.ui;bundle-version="1.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: ca.ets.sofeess.specml.architecture

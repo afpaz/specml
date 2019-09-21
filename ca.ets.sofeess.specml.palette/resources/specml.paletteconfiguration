@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="specmlpalettemodel" label="SpecML">
+  <drawerConfigurations id="ca.ets.sofeess.specml.palette.requirements" label="Requirements" description="Requirements">
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.highLevelRequirement" label="High-Level Requirement" description="High-Level Requirement">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/hlr.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#__cslcn-0EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#__cslc3-0EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.systemRequirement" label="System Requirement" description="System Requirement">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/srats.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_p-v2In-0EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_p-v2I3-0EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.lowLevelRequirement" label="Low-Level Requirement" description="Low-Level Requirement">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/llr.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_SBQFwn-1EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_SBQFw3-1EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.spec" label="Spec Package" description="Spec Package">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/package.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_vuwzgH_hEeiBHb9GNlmRuQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_Or6oMH_iEeiBHb9GNlmRuQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations id="ca.ets.sofeess.specml.palette.traces" label="Traces" description="Traces">
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.refineReqt" label="RefineReqt" description="RefineReqt" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_nN1tYX-3EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.derive" label="Derive" description="Derive" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_KBt8AX-4EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.copy" label="Copy" description="Copy" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_311aYX-3EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.coupled" label="Coupled" description="Coupled" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_W48ikX-3EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations id="ca.ets.sofeess.specml.palette.formalization" label="Formalization" description="Formalization">
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.propertyBasedStatement" label="Property-Based Statement" description="Property-Based Statement">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/pbs.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_rdKfcn-1EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_rdKfc3-1EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.formalization" label="Formalization" description="Formalization" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_5rNyMX-4EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.condition" label="Condition" description="Condition" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_q8CA8X-4EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.predicate" label="Predicate" description="Predicate" kind="ConnectionTool">
+      <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_aPNeUX-4EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations id="ca.ets.sofeess.specml.palette.timing" label="Timing" description="Timing">
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.timedInstantObservation" label="Timed Instant Observation" description="Timed Instant Observation">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/timed.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_JI95oH-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_eRkrEH-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.timedDurationConstraint" label="Timed Duration Constraint" description="Timed Duration Constraint" toolClassName="">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/timed.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_yAJugH-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_8et_IH-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.timedEvent" label="TimedEvent" description="Timed Event">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/timed.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_lBTScH-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_lBTScX-5EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="ca.ets.sofeess.specml.palette.timedDomain" label="Timed Domain" description="Timed Domain">
+      <icon pluginID="ca.ets.sofeess.specml.profile" iconPath="/icons/timed.png"/>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_JMggYH-6EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+      <elementDescriptors>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="specmldi.elementtypesconfigurations#_ZRUAwH-6EeiiXp03xYXHpQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+</paletteconfiguration:PaletteConfiguration>

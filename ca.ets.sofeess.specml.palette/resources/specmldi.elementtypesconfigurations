@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmi:id="ca.ets.sofeess.specml.profile.specmldi.elementTypes" identifier="ca.ets.sofeess.specml.profile.specmldi.elementTypes" name="ca.ets.sofeess.specml.profile.specmldi.elementTypes" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="ca.ets.sofeess.specml.profile.specmldi.Requirement_Class_MetaclassShape" identifier="ca.ets.sofeess.specml.profile.specmldi.Requirement_Class_MetaclassShape" name="Requirement (Class_MetaclassShape)" hint="Class_MetaclassShape">
+    <iconEntry xmi:id="_u9UVEIF5EeiG39bmn5O9jg" iconPath="/icons/requirement.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FIQIMH7zEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Sa29wH-jEeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Requirement_Class_MetaclassShape_CN" name="Requirement (Class_MetaclassShape_CN)" hint="Class_MetaclassShape_CN">
+    <iconEntry xmi:id="_2OKFcIF5EeiG39bmn5O9jg" iconPath="/icons/requirement.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FIQIMH7zEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Zw7jsH-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Requirement_Class_Shape" name="Requirement (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_2YWjQIF5EeiG39bmn5O9jg" iconPath="/icons/requirement.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FIQIMH7zEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_jco0AH-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Requirement_Class_Shape_CN" name="Requirement (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_2gt1EIF5EeiG39bmn5O9jg" iconPath="/icons/requirement.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FIQIMH7zEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_p-v2IH-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.SystemRequirement_Class_MetaclassShape" name="SystemRequirement (Class_MetaclassShape)" hint="Class_MetaclassShape">
+    <iconEntry xmi:id="_5BqH0IF5EeiG39bmn5O9jg" iconPath="/icons/srats.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2Qn7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_p-v2IX-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.SystemRequirement_Class_MetaclassShape_CN" name="SystemRequirement (Class_MetaclassShape_CN)" hint="Class_MetaclassShape_CN">
+    <iconEntry xmi:id="_7Hw4sIF5EeiG39bmn5O9jg" iconPath="/icons/srats.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2Qn7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_p-v2In-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.SystemRequirement_Class_Shape" name="SystemRequirement (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_7RGa4IF5EeiG39bmn5O9jg" iconPath="/icons/srats.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2Qn7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_p-v2I3-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.SystemRequirement_Class_Shape_CN" name="SystemRequirement (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_7bgUEIF5EeiG39bmn5O9jg" iconPath="/icons/srats.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2Qn7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="__cslcH-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.HighLevelRequirement_Class_MetaclassShape" name="HighLevelRequirement (Class_MetaclassShape)" hint="Class_MetaclassShape">
+    <iconEntry xmi:id="_7lYBwIF5EeiG39bmn5O9jg" iconPath="/icons/hlr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2QH7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="__cslcX-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.HighLevelRequirement_Class_MetaclassShape_CN" name="HighLevelRequirement (Class_MetaclassShape_CN)" hint="Class_MetaclassShape_CN">
+    <iconEntry xmi:id="_82tGwIF5EeiG39bmn5O9jg" iconPath="/icons/hlr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2QH7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="__cslcn-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.HighLevelRequirement_Class_Shape" name="HighLevelRequirement (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_8_0mgIF5EeiG39bmn5O9jg" iconPath="/icons/hlr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2QH7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="__cslc3-0EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.HighLevelRequirement_Class_Shape_CN" name="HighLevelRequirement (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_9IZ6wIF5EeiG39bmn5O9jg" iconPath="/icons/hlr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_qFg2QH7UEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_SBQFwH-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.LowLevelRequirement_Class_MetaclassShape" name="LowLevelRequirement (Class_MetaclassShape)" hint="Class_MetaclassShape">
+    <iconEntry xmi:id="_9nayAIF5EeiG39bmn5O9jg" iconPath="/icons/llr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_ualdcH7yEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_SBQFwX-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.LowLevelRequirement_Class_MetaclassShape_CN" name="LowLevelRequirement (Class_MetaclassShape_CN)" hint="Class_MetaclassShape_CN">
+    <iconEntry xmi:id="_-48rUIF5EeiG39bmn5O9jg" iconPath="/icons/llr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_ualdcH7yEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_SBQFwn-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.LowLevelRequirement_Class_Shape" name="LowLevelRequirement (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="__Baq0IF5EeiG39bmn5O9jg" iconPath="/icons/llr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_ualdcH7yEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_SBQFw3-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.LowLevelRequirement_Class_Shape_CN" name="LowLevelRequirement (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="__JeaoIF5EeiG39bmn5O9jg" iconPath="/icons/llr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_ualdcH7yEei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rdKfcH-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.PropertyBasedStatement_Class_MetaclassShape" name="PropertyBasedStatement (Class_MetaclassShape)" hint="Class_MetaclassShape">
+    <iconEntry xmi:id="__Uh0EIF5EeiG39bmn5O9jg" iconPath="/icons/pbs.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_f3vXsH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rdKfcX-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.PropertyBasedStatement_Class_MetaclassShape_CN" name="PropertyBasedStatement (Class_MetaclassShape_CN)" hint="Class_MetaclassShape_CN">
+    <iconEntry xmi:id="_AgfQ4IF6EeiG39bmn5O9jg" iconPath="/icons/pbs.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_f3vXsH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_MetaclassShape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rdKfcn-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.PropertyBasedStatement_Class_Shape" name="PropertyBasedStatement (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_Aov1AIF6EeiG39bmn5O9jg" iconPath="/icons/pbs.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_f3vXsH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_rdKfc3-1EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.PropertyBasedStatement_Class_Shape_CN" name="PropertyBasedStatement (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_A0jcYIF6EeiG39bmn5O9jg" iconPath="/icons/pbs.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_f3vXsH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_C0kDsH-2EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Trace_Dependency_BranchEdge" name="Trace (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_GCW-AIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_67iVMH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_THGeEH-2EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Trace_Dependency_Edge" name="Trace (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_T29WUIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_67iVMH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Zk0IYH-2EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Trace_Dependency_Shape" name="Trace (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_UJFoIIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_67iVMH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_juIhwH-2EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Trace_Dependency_Shape_CN" name="Trace (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_UT6_IIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_67iVMH71Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_W48ikH-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Coupled_Dependency_BranchEdge" name="Coupled (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_UdejwIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_yPG7IH72Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_W48ikX-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Coupled_Dependency_Edge" name="Coupled (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_Un_KoIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_yPG7IH72Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_W48ikn-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Coupled_Dependency_Shape" name="Coupled (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_Uw5PAIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_yPG7IH72Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_W48ik3-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Coupled_Dependency_Shape_CN" name="Coupled (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_U4nnoIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_yPG7IH72Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_nN1tYH-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.RefineReqt_Dependency_BranchEdge" name="RefineReqt (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_VJQEoIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FDg1UH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_nN1tYX-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.RefineReqt_Dependency_Edge" name="RefineReqt (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_VRFK8IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FDg1UH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_nN1tYn-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.RefineReqt_Dependency_Shape" name="RefineReqt (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_VX8n8IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FDg1UH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_nN1tY3-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.RefineReqt_Dependency_Shape_CN" name="RefineReqt (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_VgNMEIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_FDg1UH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_311aYH-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Copy_Dependency_BranchEdge" name="Copy (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_VwTdkIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_WoIioH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_311aYX-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Copy_Dependency_Edge" name="Copy (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_V3tGEIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_WoIioH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_311aYn-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Copy_Dependency_Shape" name="Copy (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_V_AA4IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_WoIioH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_311aY3-3EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Copy_Dependency_Shape_CN" name="Copy (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_WHQlAIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_WoIioH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_KBt8AH-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Derive_Dependency_BranchEdge" name="Derive (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_WXyUUIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_6JKLIH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_KBt8AX-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Derive_Dependency_Edge" name="Derive (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_W_zWkIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_6JKLIH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_KBt8An-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Derive_Dependency_Shape" name="Derive (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_Xf_SgIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_6JKLIH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_KBt8A3-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Derive_Dependency_Shape_CN" name="Derive (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_XsjH0IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_6JKLIH73Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aPNeUH-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Predicate_Dependency_BranchEdge" name="Predicate (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_X5hz4IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Qsa8sH74Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aPNeUX-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Predicate_Dependency_Edge" name="Predicate (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_YFOGgIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Qsa8sH74Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aPNeUn-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Predicate_Dependency_Shape" name="Predicate (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_YXWYUIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Qsa8sH74Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_aPNeU3-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Predicate_Dependency_Shape_CN" name="Predicate (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_Yewn4IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Qsa8sH74Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_q8CA8H-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Condition_Dependency_BranchEdge" name="Condition (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_YmQ-EIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Yqns4H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_q8CA8X-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Condition_Dependency_Edge" name="Condition (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_YtqmkIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Yqns4H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_q8CA8n-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Condition_Dependency_Shape" name="Condition (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_Y1E2IIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Yqns4H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_q8CA83-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Condition_Dependency_Shape_CN" name="Condition (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_Y9OskIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Yqns4H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5rNyMH-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Formalization_Dependency_BranchEdge" name="Formalization (Dependency_BranchEdge)" hint="Dependency_BranchEdge">
+    <iconEntry xmi:id="_ZJx60IF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_nefJ0H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_BranchEdge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5rNyMX-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Formalization_Dependency_Edge" name="Formalization (Dependency_Edge)" hint="Dependency_Edge">
+    <iconEntry xmi:id="_ZSJMoIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_nefJ0H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5rNyMn-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Formalization_Dependency_Shape" name="Formalization (Dependency_Shape)" hint="Dependency_Shape">
+    <iconEntry xmi:id="_ZahFgIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_nefJ0H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5rNyM3-4EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Formalization_Dependency_Shape_CN" name="Formalization (Dependency_Shape_CN)" hint="Dependency_Shape_CN">
+    <iconEntry xmi:id="_ZjolQIF6EeiG39bmn5O9jg" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_nefJ0H75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_JI95oH-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedInstantObservation_Class_Shape" name="TimedInstantObservation (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_jcdrkIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_5PjXsH75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_eRkrEH-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedInstantObservation_Class_Shape_CN" name="TimedInstantObservation (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_lb5MsIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_5PjXsH75Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_lBTScH-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedEvent_Class_Shape" name="TimedEvent (Class_Shape)" hint="Class_Shape">
+    <iconEntry xmi:id="_lpoGsIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_HpVgsH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_lBTScX-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedEvent_Class_Shape_CN" name="TimedEvent (Class_Shape_CN)" hint="Class_Shape_CN">
+    <iconEntry xmi:id="_lyvmcIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_HpVgsH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_yAJugH-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedDurationConstraint_Constraint_Shape" name="TimedDurationConstraint (Constraint_Shape)" hint="Constraint_Shape">
+    <iconEntry xmi:id="_mAlOIIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Y5qZAH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Constraint_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_8et_IH-5EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedDurationConstraint_Constraint_Shape_CN" name="TimedDurationConstraint (Constraint_Shape_CN)" hint="Constraint_Shape_CN">
+    <iconEntry xmi:id="_mJKiYIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_Y5qZAH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Constraint_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_JMggYH-6EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedDomain_Package_Shape" name="TimedDomain (Package_Shape)" hint="Package_Shape">
+    <iconEntry xmi:id="_mcsiYIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_tCfIcH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_ZRUAwH-6EeiiXp03xYXHpQ" identifier="ca.ets.sofeess.specml.profile.specmldi.TimedDomain_Package_Shape_CN" name="TimedDomain (Package_Shape_CN)" hint="Package_Shape_CN">
+    <iconEntry xmi:id="_mkvEEIF6EeiG39bmn5O9jg" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_tCfIcH76Eei8aYA-LLTcPA"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape_CN"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_vuwzgH_hEeiBHb9GNlmRuQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Spec_Package_Shape" name="SpecPackage (Package_Shape)" hint="Package_Shape">
+    <iconEntry xmi:id="_wm6ToIF6EeiG39bmn5O9jg" iconPath="/icons/package.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_IBM28H_SEeiBHb9GNlmRuQ"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Or6oMH_iEeiBHb9GNlmRuQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Spec_Package_Shape_CN" name="SpecPackage (Package_Shape_CN)" hint="Package_Shape_CN">
+    <iconEntry xmi:id="_0AjwAIF6EeiG39bmn5O9jg" iconPath="/icons/package.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_IBM28H_SEeiBHb9GNlmRuQ"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_UZB8AH_iEeiBHb9GNlmRuQ" identifier="ca.ets.sofeess.specml.profile.specmldi.Spec_PapyrusUMLClassDiagram" name="Spec (PapyrusUMLClassDiagram)" hint="PapyrusUMLClassDiagram">
+    <iconEntry xmi:id="_0KbdsIF6EeiG39bmn5O9jg" iconPath="/icons/specml.gif" bundleId="ca.ets.sofeess.specml.profile"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_ClassDiagram"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../ca.ets.sofeess.specml.newchild/resources/specml.elementtypesconfigurations#_5tQ8YOIrEeiyZc-lM-ARdA"/>
+  </elementTypeConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

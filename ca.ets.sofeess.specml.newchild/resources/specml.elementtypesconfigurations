@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_YINgcH5WEeizDYr1I7J54w" description="SpecML Element Types" identifier="ca.ets.sofeess.specml.profile.elementTypes" name="ca.ets.sofeess.specml.profile.elementTypes" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_qFg2QH7UEei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.HighLevelRequirement" name="HighLevelRequirement" hint="UML::Class">
+    <iconEntry xmi:id="_VU8woICxEeimSaYCXUqVZA" iconPath="/icons/hlr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_qFg2QX7UEei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::HighLevelRequirement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_qFg2Qn7UEei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.SystemRequirement" name="SystemRequirement" hint="UML::Class">
+    <iconEntry xmi:id="_XcJGoICxEeimSaYCXUqVZA" iconPath="/icons/srats.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Mc72wH7zEei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::SystemRequirement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_ualdcH7yEei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.LowLevelRequirement" name="LowLevelRequirement" hint="UML::Class">
+    <iconEntry xmi:id="_XqnngICxEeimSaYCXUqVZA" iconPath="/icons/llr.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q_9WAH7zEei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::LowLevelRequirement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_FIQIMH7zEei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Requirement" name="Requirement" hint="UML::Class">
+    <iconEntry xmi:id="_X0mC4ICxEeimSaYCXUqVZA" iconPath="/icons/requirement.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Vyf38H7zEei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Requirement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_f3vXsH71Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.PropertyBasedStatement" name="PropertyBasedStatement" hint="UML::Class">
+    <iconEntry xmi:id="_YALn0ICxEeimSaYCXUqVZA" iconPath="/icons/pbs.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_mFQC0H71Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::PropertyBasedStatement</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_67iVMH71Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Trace" name="Trace" hint="UML::Dependency">
+    <iconEntry xmi:id="_MKLDIICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_XZ7BYH72Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Trace</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_yPG7IH72Eei8aYA-LLTcPA" description="" identifier="ca.ets.sofeess.specml.profile.Coupled" name="Coupled" hint="UML::Dependency">
+    <iconEntry xmi:id="_QnXnMICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_5UNVkH72Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Coupled</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_FDg1UH73Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.RefineReqt" name="RefineReqt" hint="UML::Dependency">
+    <iconEntry xmi:id="_Q8gJsICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_MQCGYH73Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::RefineReqt</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_WoIioH73Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Copy" name="Copy" hint="UML::Dependency">
+    <iconEntry xmi:id="_RN-7QICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_y_KpoH73Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Copy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_6JKLIH73Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Derive" name="Derive" hint="UML::Dependency">
+    <iconEntry xmi:id="_RiJ0cICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_AzjmkH74Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Derive</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Qsa8sH74Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Predicate" name="Predicate" hint="UML::Dependency">
+    <iconEntry xmi:id="_R1sbgICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_W6tD4H74Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Predicate</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Yqns4H75Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Condition" name="Condition" hint="UML::Dependency">
+    <iconEntry xmi:id="_SIPkEICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dfE6YH75Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Condition</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_nefJ0H75Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.Formalization" name="Formalization" hint="UML::Dependency">
+    <iconEntry xmi:id="_Sd65IICxEeimSaYCXUqVZA" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_stCSUH75Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Formalization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5PjXsH75Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.TimedInstantObservation" name="TimedInstantObservation" hint="UML::Class">
+    <iconEntry xmi:id="_dusCwICxEeimSaYCXUqVZA" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="__DqrYH75Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::TimedInstantObservation</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_HpVgsH76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.TimedEvent" name="TimedEvent" hint="UML::Class">
+    <iconEntry xmi:id="_fZwdcICxEeimSaYCXUqVZA" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Mah-0H76Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::TimedEvent</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Y5qZAH76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.TimedDurationConstraint" name="TimedDurationConstraint" hint="UML::Constraint">
+    <iconEntry xmi:id="_mhG6oICxEeimSaYCXUqVZA" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_fnwosH76Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::TimedDurationConstraint</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Constraint"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tCfIcH76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.TimedDomain" name="TimedDomain" hint="UML::Package">
+    <iconEntry xmi:id="_sMfwIICxEeimSaYCXUqVZA" iconPath="/icons/timed.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_y-OuIH76Eei8aYA-LLTcPA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::TimedDomain</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_IBM28H_SEeiBHb9GNlmRuQ" identifier="ca.ets.sofeess.specml.profile.SpecPackage" name="SpecPackage" hint="UML::Package">
+    <iconEntry xmi:id="_uEw5UICxEeimSaYCXUqVZA" iconPath="/icons/package.png" bundleId="ca.ets.sofeess.specml.profile"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_RrwQsH_SEeiBHb9GNlmRuQ" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Spec</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_5tQ8YOIrEeiyZc-lM-ARdA" identifier="ca.ets.sofeess.specml.profile.SpecPackage" name="Spec" hint="UML::Package">
+    <iconEntry xmi:id="_5tQ8YeIrEeiyZc-lM-ARdA" iconPath="/icons/specml.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_5tQ8YuIrEeiyZc-lM-ARdA" profileUri="http://www.etsmtl.ca/sofeess/specml">
+      <stereotypesQualifiedNames>specml::Spec</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_5p9f8H7yEei8aYA-LLTcPA" description="" identifier="ca.ets.sofeess.specml.profile.lowLevelRequirement" target="_ualdcH7yEei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_AHs_cH7zEei8aYA-LLTcPA" stereotypeQualifiedName="specml::LowLevelRequirement" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_qFhdUH7UEei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.highLevelRequirement" target="_qFg2QH7UEei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_qFhdUX7UEei8aYA-LLTcPA" stereotypeQualifiedName="specml::HighLevelRequirement" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_qFhdUn7UEei8aYA-LLTcPA" description="" identifier="ca.ets.sofeess.specml.profile.systemRequirement" target="_qFg2Qn7UEei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_qFhdU37UEei8aYA-LLTcPA" stereotypeQualifiedName="specml::SystemRequirement" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_qQFEgH71Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.requirement" target="_FIQIMH7zEei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_t-l9oH71Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Requirement" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_x2xJEH71Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.propertyBasedStatement" target="_f3vXsH71Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_233EYH71Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::PropertyBasedStatement" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_cdvgkH72Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.trace" target="_67iVMH71Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_gJWPoH72Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Trace" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="__MJZUH72Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.coupled" target="_yPG7IH72Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_BmiYIH73Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Coupled" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_PqGZgH73Eei8aYA-LLTcPA" description="" identifier="ca.ets.sofeess.specml.profile.refineReqt" target="_FDg1UH73Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_T1TOoH73Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::RefineReqt" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_2wCTMH73Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.copy" target="_WoIioH73Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_Eo0A4H74Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Copy" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Ir1KYH74Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.derive" target="_6JKLIH73Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_KgkecH74Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Derive" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Z1DVIH74Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.predicate" target="_Qsa8sH74Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_b9V3UH74Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Predicate" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_hrf3gH75Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.condition" target="_Yqns4H75Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_kIHq8H75Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Condition" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_wM0L4H75Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.formalization" target="_nefJ0H75Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_yvlqoH75Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::Formalization" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_CGgxUH76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.timedInstantObservation" target="_5PjXsH75Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_EZ1e0H76Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::TimedInstantObservation" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_O2MwAH76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.timedEvent" target="_HpVgsH76Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_RHQzsH76Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::TimedEvent" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_k9R74H76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.timedDurationConstraint" target="_Y5qZAH76Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_oAcK4H76Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::TimedDurationConstraint" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_2LQq0H76Eei8aYA-LLTcPA" identifier="ca.ets.sofeess.specml.profile.timedDomain" target="_tCfIcH76Eei8aYA-LLTcPA">
+    <stereotypesToApply xmi:id="_4drZYH76Eei8aYA-LLTcPA" stereotypeQualifiedName="specml::TimedDomain" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_YnFEEH_SEeiBHb9GNlmRuQ" identifier="ca.ets.sofeess.specml.profile.spec" target="_IBM28H_SEeiBHb9GNlmRuQ">
+    <stereotypesToApply xmi:id="_iw-sQH_SEeiBHb9GNlmRuQ" stereotypeQualifiedName="specml::Spec" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Ke9_AOIsEeiyZc-lM-ARdA" identifier="ca.ets.sofeess.specml.profile.spec" target="_5tQ8YOIrEeiyZc-lM-ARdA">
+    <stereotypesToApply xmi:id="_Ke9_AeIsEeiyZc-lM-ARdA" stereotypeQualifiedName="specml::Spec" updateName="true">
+      <requiredProfiles>specml</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

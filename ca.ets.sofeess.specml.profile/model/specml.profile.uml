@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:PapyrusDSMLValidationRule="http://www.eclipse.org/papyrus/dsmlvalidation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Profile xmi:id="_EohtkHMyEeiGk6p11I42Qw" name="specml" URI="http://www.etsmtl.ca/sofeess/specml" metaclassReference="_gC7wEHM5EeiGk6p11I42Qw _b_oD8HM_EeiGk6p11I42Qw _7ZNuAHZVEei18bAN1gzIJQ _s-KX0HdUEeiHuaFJALnuYg _HHWr0HpWEeieONEn5t91tg _2hgOsHpnEei1jrmsK3WGZw _PTrQ8H_QEeiBHb9GNlmRuQ _49p8IB26EemRvYln_4a8Hw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pGiFQXM-EeiGk6p11I42Qw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_iN1C4NykEem1o537TZr7Sw" name="specml" nsURI="http://www.etsmtl.ca/sofeess/specml" nsPrefix="specml">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iOACAtykEem1o537TZr7Sw" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iOACA9ykEem1o537TZr7Sw" key="Version" value="1.0.0"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iOACBNykEem1o537TZr7Sw" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iOACBdykEem1o537TZr7Sw" key="Copyright" value="© 2019 École de Technologie Supérieure"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iOACBtykEem1o537TZr7Sw" key="Date" value="2019-09-21"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iOACB9ykEem1o537TZr7Sw" key="Author" value="Andrés Paz"/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1C4dykEem1o537TZr7Sw" name="Requirement" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1C4tykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_dm1hEHM5EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1C49ykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1C5NykEem1o537TZr7Sw" key="documentation" value="self.base_Class.extension_Requirement -> size() = 1&#xA;Requirement.allInstances() -> isUnique(id)&#xA;self.isDerived implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)&#xA;self.base_Class.nestedClassifier -> isEmpty()&#xA;self.base_Class.association -> isEmpty()&#xA;self.base_Class.generalization -> isEmpty()&#xA;self.base_Class.ownedAttribute -> isEmpty()&#xA;self.base_Class.ownedOperation -> isEmpty()&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.text = self.text)) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)) else true endif&#xA;self.isFormalizable implies self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null)"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1C5dykEem1o537TZr7Sw" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C59ykEem1o537TZr7Sw" name="id" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C6dykEem1o537TZr7Sw" name="text" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C69ykEem1o537TZr7Sw" name="type" ordered="false" lowerBound="1" eType="_iN1DDdykEem1o537TZr7Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C7dykEem1o537TZr7Sw" name="source" ordered="false" lowerBound="1" upperBound="-1" eType="_iN1DE9ykEem1o537TZr7Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C79ykEem1o537TZr7Sw" name="isDerived" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C8dykEem1o537TZr7Sw" name="isStable" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C89ykEem1o537TZr7Sw" name="creationDate" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C9dykEem1o537TZr7Sw" name="modificationDate" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C99ykEem1o537TZr7Sw" name="revision" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C-dykEem1o537TZr7Sw" name="status" ordered="false" lowerBound="1" eType="_iN1DI9ykEem1o537TZr7Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C-9ykEem1o537TZr7Sw" name="isVerifiable" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C_dykEem1o537TZr7Sw" name="isConsistent" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1C_9ykEem1o537TZr7Sw" name="isFormalizable" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DAdykEem1o537TZr7Sw" name="refinedBy" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DA9ykEem1o537TZr7Sw" name="refinedFrom" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DBdykEem1o537TZr7Sw" name="coupledTo" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DB9ykEem1o537TZr7Sw" name="copiedFrom" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DCdykEem1o537TZr7Sw" name="derivedFrom" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DC9ykEem1o537TZr7Sw" name="formalizedAs" ordered="false" upperBound="-1" derived="true">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_iN1DDdykEem1o537TZr7Sw" name="RequirementType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DDtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FOqm4HM6EeiGk6p11I42Qw"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DD9ykEem1o537TZr7Sw" name="StructuralRequirement"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DENykEem1o537TZr7Sw" name="BehaviouralRequirement" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DEdykEem1o537TZr7Sw" name="MixedRequirement" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DEtykEem1o537TZr7Sw" name="OtherRequirementType" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_iN1DE9ykEem1o537TZr7Sw" name="Source">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DFNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SqQpUHM6EeiGk6p11I42Qw"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DFdykEem1o537TZr7Sw" name="Acquirer"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DFtykEem1o537TZr7Sw" name="Operator" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DF9ykEem1o537TZr7Sw" name="CertificationAuthority" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DGNykEem1o537TZr7Sw" name="SpecialtyEngineer" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DGdykEem1o537TZr7Sw" name="OtherStakeholder" value="4"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DGtykEem1o537TZr7Sw" name="CertificationStandard" value="5"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DG9ykEem1o537TZr7Sw" name="Safety" value="6"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DHNykEem1o537TZr7Sw" name="Costs" value="7"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DHdykEem1o537TZr7Sw" name="EnvironmentalConditions" value="8"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DHtykEem1o537TZr7Sw" name="Design" value="9"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DH9ykEem1o537TZr7Sw" name="Production" value="10"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DINykEem1o537TZr7Sw" name="Tests" value="11"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DIdykEem1o537TZr7Sw" name="Maintenance" value="12"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DItykEem1o537TZr7Sw" name="OtherSource" value="13"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_iN1DI9ykEem1o537TZr7Sw" name="RequirementStatus">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DJNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oqBFMHM6EeiGk6p11I42Qw"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DJdykEem1o537TZr7Sw" name="PendingReview"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DJtykEem1o537TZr7Sw" name="ReviewedAndAccepted" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DJ9ykEem1o537TZr7Sw" name="ReviewedAndIncorrect" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DKNykEem1o537TZr7Sw" name="SystemRequirement" eSuperTypes="_iN1C4dykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DKdykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IRor0HM-EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DKtykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DK9ykEem1o537TZr7Sw" key="documentation" value="if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DLNykEem1o537TZr7Sw" name="allocatedToSoftware" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DL9ykEem1o537TZr7Sw" name="HighLevelRequirement" eSuperTypes="_iN1C4dykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DMNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_szGdoHM-EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DMdykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DMtykEem1o537TZr7Sw" key="documentation" value="not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) &lt;> d.extension_Trace.oclIsKindOf(Copy))&#xA;self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive))&#xA;self.describesDesignDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)&#xA;self.describesVerificationDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DM9ykEem1o537TZr7Sw" name="precludesCFC" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DNdykEem1o537TZr7Sw" name="describesDesignDetail" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DN9ykEem1o537TZr7Sw" name="describesVerificationDetail" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DOtykEem1o537TZr7Sw" name="LowLevelRequirement" eSuperTypes="_iN1C4dykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DO9ykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_489ycHM-EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DPNykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DPdykEem1o537TZr7Sw" key="documentation" value="not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt))&#xA;self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive))&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DP9ykEem1o537TZr7Sw" name="Coupled" eSuperTypes="_iN1DQtykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DQNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_VQkyAHM_EeiGk6p11I42Qw"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DQtykEem1o537TZr7Sw" name="Trace" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DQ9ykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_jmTWMHuqEeiMJZSAgKAykg"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DRNykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DRdykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> size() = 1&#xA;self.base_Dependency.supplier -> size() = 1&#xA;self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null)"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DRtykEem1o537TZr7Sw" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DSNykEem1o537TZr7Sw" name="RefineReqt" eSuperTypes="_iN1DQtykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DSdykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_WS4jkHM_EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DStykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DS9ykEem1o537TZr7Sw" key="documentation" value="true&#xA;true"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DTdykEem1o537TZr7Sw" name="Copy" eSuperTypes="_iN1DQtykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DTtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_YJijMHM_EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DT9ykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DUNykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null and c.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DUtykEem1o537TZr7Sw" name="Derive" eSuperTypes="_iN1DQtykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DU9ykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ZF76AHM_EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DVNykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DVdykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null and c.oclAsType(Class).extension_Requirement.isDerived)"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DV9ykEem1o537TZr7Sw" name="PropertyBasedStatement">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DWNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_uXH_sHM_EeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DWdykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DWtykEem1o537TZr7Sw" key="documentation" value="self.base_Class.nestedClassifier -> isEmpty()&#xA;self.base_Class.association -> isEmpty()&#xA;self.base_Class.generalization -> isEmpty()&#xA;self.base_Class.ownedAttribute -> isEmpty()&#xA;self.base_Class.ownedOperation -> isEmpty()&#xA;self.base_Class.extension -> size() = 1&#xA;PropertyBasedStatement.allInstances() -> isUnique(id)&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Condition &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Condition &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock &lt;> null)) else true endif&#xA;if self.base_Class.clientDependency -> exists(d | d.extension_Predicate &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Predicate &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock &lt;> null)) else true endif"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DW9ykEem1o537TZr7Sw" name="id" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DXdykEem1o537TZr7Sw" name="text" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DX9ykEem1o537TZr7Sw" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DYdykEem1o537TZr7Sw" name="condition" ordered="false" lowerBound="1" derived="true">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DY9ykEem1o537TZr7Sw" name="predicate" ordered="false" lowerBound="1" derived="true">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DZdykEem1o537TZr7Sw" name="statement" ordered="false" lowerBound="1" derived="true">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DZ9ykEem1o537TZr7Sw" name="formalizationFor" ordered="false" upperBound="-1" eType="_iN1C4dykEem1o537TZr7Sw" derived="true"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DadykEem1o537TZr7Sw" name="TimedDomain">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DatykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2k948HNBEeiGk6p11I42Qw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1Da9ykEem1o537TZr7Sw" name="base_Namespace" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Namespace"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DbdykEem1o537TZr7Sw" name="TimedEvent">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DbtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4twKYHNBEeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1Db9ykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DcNykEem1o537TZr7Sw" key="documentation" value="self.base_Class.extension_PropertyBasedStatement &lt;> null&#xA;self.base_Class.namespace.extension_TimedDomain &lt;> null"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DcdykEem1o537TZr7Sw" name="repetition" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dc9ykEem1o537TZr7Sw" name="every" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DddykEem1o537TZr7Sw" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1Dd9ykEem1o537TZr7Sw" name="TimedDurationConstraint">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DeNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5vG5sHNBEeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DedykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DetykEem1o537TZr7Sw" key="documentation" value="self.base_Constraint.namespace.extension_TimedDomain &lt;> null or self.base_Constraint.namespace.namespace.extension_TimedDomain &lt;> null"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1De9ykEem1o537TZr7Sw" name="base_Constraint" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Constraint"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DfdykEem1o537TZr7Sw" name="kind" ordered="false" lowerBound="1" eType="_iN1Df9ykEem1o537TZr7Sw"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_iN1Df9ykEem1o537TZr7Sw" name="ConstraintKind">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DgNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_aOPGAHpqEei1jrmsK3WGZw"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DgdykEem1o537TZr7Sw" name="required"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DgtykEem1o537TZr7Sw" name="offered" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1Dg9ykEem1o537TZr7Sw" name="contract" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DhNykEem1o537TZr7Sw" name="TimedInstantObservation">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DhdykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7m9MIHNBEeiGk6p11I42Qw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DhtykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1Dh9ykEem1o537TZr7Sw" key="documentation" value="self.base_Class.extension_PropertyBasedStatement &lt;> null&#xA;self.base_Class.namespace.extension_TimedDomain &lt;> null"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DiNykEem1o537TZr7Sw" name="obsKind" ordered="false" eType="_iN1DjNykEem1o537TZr7Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DitykEem1o537TZr7Sw" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_iN1DjNykEem1o537TZr7Sw" name="EventKind">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DjdykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NFwewHpoEei1jrmsK3WGZw"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DjtykEem1o537TZr7Sw" name="start"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1Dj9ykEem1o537TZr7Sw" name="finish" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DkNykEem1o537TZr7Sw" name="send" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DkdykEem1o537TZr7Sw" name="receive" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_iN1DktykEem1o537TZr7Sw" name="consume" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1Dk9ykEem1o537TZr7Sw" name="Formalization">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DlNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfUzUHZVEei18bAN1gzIJQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DldykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DltykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null)&#xA;self.base_Dependency.supplier -> size() = 1&#xA;self.base_Dependency.client -> size() = 1"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1Dl9ykEem1o537TZr7Sw" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DmdykEem1o537TZr7Sw" name="Condition">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DmtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_y6J3AHZVEei18bAN1gzIJQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1Dm9ykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DnNykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)&#xA;self.base_Dependency.supplier -> size() = 1&#xA;self.base_Dependency.client -> size() = 1"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1DndykEem1o537TZr7Sw" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1Dn9ykEem1o537TZr7Sw" name="Predicate">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DoNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0YVsQHZVEei18bAN1gzIJQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DodykEem1o537TZr7Sw" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iN1DotykEem1o537TZr7Sw" key="documentation" value="self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)&#xA;self.base_Dependency.supplier -> size() = 1&#xA;self.base_Dependency.client -> size() = 1"/>
+          </eAnnotations>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1Do9ykEem1o537TZr7Sw" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DpdykEem1o537TZr7Sw" name="Spec">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DptykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QbNgwH_QEeiBHb9GNlmRuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1Dp9ykEem1o537TZr7Sw" name="base_Package" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DqdykEem1o537TZr7Sw" name="Data" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DqtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rN_1kB23EemRvYln_4a8Hw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dq9ykEem1o537TZr7Sw" name="description" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DrdykEem1o537TZr7Sw" name="rationale" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dr9ykEem1o537TZr7Sw" name="displayName" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DsdykEem1o537TZr7Sw" name="source" ordered="false" lowerBound="1" upperBound="-1" eType="_iN1DE9ykEem1o537TZr7Sw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Ds9ykEem1o537TZr7Sw" name="creationNotes" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DtdykEem1o537TZr7Sw" name="maintenanceNotes" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dt9ykEem1o537TZr7Sw" name="usageNotes" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DudykEem1o537TZr7Sw" name="creationDate" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Du9ykEem1o537TZr7Sw" name="modificationDate" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DvdykEem1o537TZr7Sw" name="revision" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1Dv9ykEem1o537TZr7Sw" name="otherMetadata" ordered="false" upperBound="-1" eType="_iN1DwdykEem1o537TZr7Sw" containment="true"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1DwdykEem1o537TZr7Sw" name="DataAttribute">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DwtykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_T1mv0B3YEemhz_OUxpQUNA"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dw9ykEem1o537TZr7Sw" name="name" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DxdykEem1o537TZr7Sw" name="value" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1Dx9ykEem1o537TZr7Sw" name="FieldData" eSuperTypes="_iN1DqdykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1DyNykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Gwl9AB26EemRvYln_4a8Hw"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DydykEem1o537TZr7Sw" name="possibleValues" ordered="false" lowerBound="1" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dy9ykEem1o537TZr7Sw" name="format" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1DzdykEem1o537TZr7Sw" name="length" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1Dz9ykEem1o537TZr7Sw" name="defaultValue" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1D0dykEem1o537TZr7Sw" name="isRequired" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1D09ykEem1o537TZr7Sw" name="isReadOnly" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1D1dykEem1o537TZr7Sw" name="isUnique" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_iN1D19ykEem1o537TZr7Sw" name="encoding" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1D2dykEem1o537TZr7Sw" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_iN1D3NykEem1o537TZr7Sw" name="EntityData" eSuperTypes="_iN1DqdykEem1o537TZr7Sw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iN1D3dykEem1o537TZr7Sw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_os-vsB3KEem9SqNdUbf9gQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iN1D3tykEem1o537TZr7Sw" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_gC7wEHM5EeiGk6p11I42Qw" alias="Class">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_b_oD8HM_EeiGk6p11I42Qw" alias="Dependency">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_7ZNuAHZVEei18bAN1gzIJQ" alias="Association">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_s-KX0HdUEeiHuaFJALnuYg" alias="Comment">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Comment"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_HHWr0HpWEeieONEn5t91tg" alias="Namespace">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Namespace"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_2hgOsHpnEei1jrmsK3WGZw" alias="Constraint">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Constraint"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_PTrQ8H_QEeiBHb9GNlmRuQ" alias="Package">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_49p8IB26EemRvYln_4a8Hw" alias="Property">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </elementImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_E2IEsHMyEeiGk6p11I42Qw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_E2LIAHMyEeiGk6p11I42Qw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_bRsxgHNAEeiGk6p11I42Qw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_dm1hEHM5EeiGk6p11I42Qw" name="Requirement" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_xcpZ8Hu1EeiMJZSAgKAykg" name="OnlyOneRequirementSubtype">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xcqBAHu1EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.extension_Requirement -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_pmwmgHvbEeiMJZSAgKAykg" name="IDMustBeUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pmwmgXvbEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>Requirement.allInstances() -> isUnique(id)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_nhkwwHvdEeiMJZSAgKAykg" name="RationaleIsRequired">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_nhkwwXvdEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.isDerived implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_q_elkHveEeiMJZSAgKAykg" name="NoNestedClassifiers">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q_elkXveEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.nestedClassifier -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_q_fMoHveEeiMJZSAgKAykg" name="NoAssociations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q_fMoXveEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.association -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_q_fMonveEeiMJZSAgKAykg" name="NoGeneralizations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q_fMo3veEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.generalization -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_q_fzsHveEeiMJZSAgKAykg" name="NoOwnedAttributes">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q_fzsXveEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.ownedAttribute -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_q_fzsnveEeiMJZSAgKAykg" name="NoOwnedOperations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q_fzs3veEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.ownedOperation -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_NSFEoHtGEeiXwK0JEBevxg" name="IfCopyTextIsReadOnly">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NSFrsHtGEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.text = self.text)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_9kzK0HvyEeiMJZSAgKAykg" name="PropertyBasedStatementSupplier">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_9kzK0XvyEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_-ga0sH2WEei6DLxmsiFXTA" name="RequirementFormalizationIsRequired">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-gj-oH2WEei6DLxmsiFXTA" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.isFormalizable implies self.base_Class.clientDependency -> exists(d | d.extension_Formalization &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hd3dAXM5EeiGk6p11I42Qw" name="base_Class" association="_hd218HM5EeiGk6p11I42Qw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4_GSsHM5EeiGk6p11I42Qw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9-iBIHM5EeiGk6p11I42Qw" name="text">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BWtd4HM6EeiGk6p11I42Qw" name="type" type="_FOqm4HM6EeiGk6p11I42Qw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DzrvQHM9EeiGk6p11I42Qw" name="source" type="_SqQpUHM6EeiGk6p11I42Qw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4ioQHM9EeiGk6p11I42Qw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4mSoHM9EeiGk6p11I42Qw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HwrJQHM9EeiGk6p11I42Qw" name="isDerived">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R6bngHM9EeiGk6p11I42Qw" name="isStable">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eD2QYHM9EeiGk6p11I42Qw" name="creationDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yIbZAHM9EeiGk6p11I42Qw" name="modificationDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_03au0HM9EeiGk6p11I42Qw" name="revision">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_39eg0HM9EeiGk6p11I42Qw" name="status" type="_oqBFMHM6EeiGk6p11I42Qw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_62OPkHM9EeiGk6p11I42Qw" name="isVerifiable">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-SfiIHM9EeiGk6p11I42Qw" name="isConsistent">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BK89AHM-EeiGk6p11I42Qw" name="isFormalizable">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_E8_YIIuQEeigjIN4Oio0Wg" name="refinedBy" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEhUYIuQEeigjIN4Oio0Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEopIIuQEeigjIN4Oio0Wg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZVqhcIuQEeigjIN4Oio0Wg" name="refinedFrom" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f6oqUIuQEeigjIN4Oio0Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f6sUsIuQEeigjIN4Oio0Wg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dys3wIwwEei76viNMbGQ_A" name="coupledTo" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jEsV0IwwEei76viNMbGQ_A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE1fwIwwEei76viNMbGQ_A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2IeTUIwxEei76viNMbGQ_A" name="copiedFrom" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-LeAIwxEei76viNMbGQ_A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-PvcIwxEei76viNMbGQ_A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ARCewIwyEei76viNMbGQ_A" name="derivedFrom" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D7NDYIwyEei76viNMbGQ_A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D7QGsIwyEei76viNMbGQ_A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UwjP4IwyEei76viNMbGQ_A" name="formalizedAs" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gAbosIwyEei76viNMbGQ_A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gAghMIwyEei76viNMbGQ_A" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_hd218HM5EeiGk6p11I42Qw" name="E_Requirement_Class" memberEnd="_hd3dAHM5EeiGk6p11I42Qw _hd3dAXM5EeiGk6p11I42Qw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_hd3dAHM5EeiGk6p11I42Qw" name="extension_Requirement" type="_dm1hEHM5EeiGk6p11I42Qw" aggregation="composite" association="_hd218HM5EeiGk6p11I42Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_FOqm4HM6EeiGk6p11I42Qw" name="RequirementType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GVmZwHM6EeiGk6p11I42Qw" name="StructuralRequirement"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IaMHsHM6EeiGk6p11I42Qw" name="BehaviouralRequirement"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KEnpMHM6EeiGk6p11I42Qw" name="MixedRequirement"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_N7z9MHM6EeiGk6p11I42Qw" name="OtherRequirementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SqQpUHM6EeiGk6p11I42Qw" name="Source">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T3FBwHM6EeiGk6p11I42Qw" name="Acquirer"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VCS3sHM6EeiGk6p11I42Qw" name="Operator"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V6g5IHM6EeiGk6p11I42Qw" name="CertificationAuthority"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Xl6D8HM6EeiGk6p11I42Qw" name="SpecialtyEngineer"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YnyXsHM6EeiGk6p11I42Qw" name="OtherStakeholder"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_aSwEsHM6EeiGk6p11I42Qw" name="CertificationStandard"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_by96QHM6EeiGk6p11I42Qw" name="Safety"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fZIIoHM6EeiGk6p11I42Qw" name="Costs"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gdXM0HM6EeiGk6p11I42Qw" name="EnvironmentalConditions"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hy4OQHM6EeiGk6p11I42Qw" name="Design"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_igQ4sHM6EeiGk6p11I42Qw" name="Production"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jVsr4HM6EeiGk6p11I42Qw" name="Tests"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kM8c8HM6EeiGk6p11I42Qw" name="Maintenance"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mwPgIHM6EeiGk6p11I42Qw" name="OtherSource"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oqBFMHM6EeiGk6p11I42Qw" name="RequirementStatus">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qGS18HM6EeiGk6p11I42Qw" name="PendingReview"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rFKR8HM6EeiGk6p11I42Qw" name="ReviewedAndAccepted"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vnJ2cHM6EeiGk6p11I42Qw" name="ReviewedAndIncorrect"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_IRor0HM-EeiGk6p11I42Qw" name="SystemRequirement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="__JinMHtGEeiXwK0JEBevxg" name="CoupledWithAnotherSRATS">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="__JjOQHtGEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="_rJ6SQHM-EeiGk6p11I42Qw" general="_dm1hEHM5EeiGk6p11I42Qw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HvxhoADoEemMaeB_lT-gbg" name="allocatedToSoftware">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_6YZboIFVEei2Pogsj-511A" format="" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/srats.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DU6qsIFWEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DU7RwIFWEei2Pogsj-511A" key="image_name_key" value="icon_srats"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dng2kIFWEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J2xOIIFWEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+        <content xsi:nil="true"/>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_szGdoHM-EeiGk6p11I42Qw" name="HighLevelRequirement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_DoFsIHu1EeiMJZSAgKAykg" name="TraceDependencyIsRequired">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_DoGTMHu1EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) &lt;> d.extension_Trace.oclIsKindOf(Copy))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_TUL6IHvMEeiMJZSAgKAykg" name="DerivedHLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TUL6IXvMEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_u74O4HvMEeiMJZSAgKAykg" name="DesignDetailRequiresRationale">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_u74O4XvMEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.describesDesignDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_xFHW0HvNEeiMJZSAgKAykg" name="VerificationDetailRequiresRationale">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xFHW0XvNEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.describesVerificationDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_iLDGUHtAEeiXwK0JEBevxg" name="CopyAnSRATS">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_iLKbEHtAEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_ta9QIHtHEeiXwK0JEBevxg" name="CoupledWithAnotherHLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ta93MHtHEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_R5-aMHuxEeiMJZSAgKAykg" name="DeriveAnHLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_R5-aMXuxEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N2d2wHvYEeiMJZSAgKAykg" name="RefineAnSRATS">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N2d2wXvYEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="_6d5ZsHM-EeiGk6p11I42Qw" general="_dm1hEHM5EeiGk6p11I42Qw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uZnvgHM-EeiGk6p11I42Qw" name="precludesCFC">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xXhrEHM-EeiGk6p11I42Qw" name="describesDesignDetail">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0CuGAHM-EeiGk6p11I42Qw" name="describesVerificationDetail">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_U_wUwIFWEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/hlr.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U_wUwYFWEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_wUwoFWEei2Pogsj-511A" key="image_name_key" value="icon_hlr"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_wUw4FWEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_wUxIFWEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_489ycHM-EeiGk6p11I42Qw" name="LowLevelRequirement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_TVJRgHvOEeiMJZSAgKAykg" name="RefineDependencyIsRequired">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TVJRgXvOEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_u2pesHvOEeiMJZSAgKAykg" name="DerivedLLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_u2pesXvOEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_4yfJEHtHEeiXwK0JEBevxg" name="CoupledWithAnotherLLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4yfwIHtHEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_e6UrEHuxEeiMJZSAgKAykg" name="DeriveAnLLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_e6UrEXuxEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N2ed0HvYEeiMJZSAgKAykg" name="RefineAnHLR">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N2ed0XvYEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace &lt;> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement &lt;> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="__kKI4HM-EeiGk6p11I42Qw" general="_dm1hEHM5EeiGk6p11I42Qw"/>
+      <icon xmi:type="uml:Image" xmi:id="_YaogMIFWEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/llr.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YaogMYFWEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YaogMoFWEei2Pogsj-511A" key="image_name_key" value="icon_llr"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YaogM4FWEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YaogNIFWEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_VQkyAHM_EeiGk6p11I42Qw" name="Coupled">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nbQOgHuqEeiMJZSAgKAykg" general="_jmTWMHuqEeiMJZSAgKAykg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_WS4jkHM_EeiGk6p11I42Qw" name="RefineReqt">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N2ed1HvYEeiMJZSAgKAykg" name="ClientIsNotADerivedRequirement">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N2ed1XvYEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N2ed1nvYEeiMJZSAgKAykg" name="SupplierIsNotADerivedRequirement">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N2ed13vYEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="_oVLgIHuqEeiMJZSAgKAykg" general="_jmTWMHuqEeiMJZSAgKAykg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_YJijMHM_EeiGk6p11I42Qw" name="Copy">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_HZMbIHtFEeiXwK0JEBevxg" name="HLRClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_HZNpQHtFEeiXwK0JEBevxg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null and c.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="_pKnTUHuqEeiMJZSAgKAykg" general="_jmTWMHuqEeiMJZSAgKAykg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZF76AHM_EeiGk6p11I42Qw" name="Derive">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_G5cPgHuyEeiMJZSAgKAykg" name="DerivedRequirementClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_G5cPgXuyEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null and c.oclAsType(Class).extension_Requirement.isDerived)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="_p3WdgHuqEeiMJZSAgKAykg" general="_jmTWMHuqEeiMJZSAgKAykg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_uXH_sHM_EeiGk6p11I42Qw" name="PropertyBasedStatement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_7IIhoHvSEeiMJZSAgKAykg" name="NoNestedClassifiers">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7IJIsHvSEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.nestedClassifier -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_YN1akHvVEeiMJZSAgKAykg" name="NoAssociations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YN1akXvVEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.association -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_KSlLMHvWEeiMJZSAgKAykg" name="NoGeneralizations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_KSlLMXvWEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.generalization -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_50dWcHvWEeiMJZSAgKAykg" name="NoOwnedAttributes">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_50dWcXvWEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.ownedAttribute -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_HffjEHvXEeiMJZSAgKAykg" name="NoOwnedOperations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_HffjEXvXEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.ownedOperation -> isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_XC7bwHvXEeiMJZSAgKAykg" name="NoOtherStereotype">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XC7bwXvXEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.extension -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_9QkwoHvZEeiMJZSAgKAykg" name="IDMustBeUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_9QkwoXvZEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>PropertyBasedStatement.allInstances() -> isUnique(id)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_d8ENEnvzEeiMJZSAgKAykg" name="ConstraintBlockSupplier">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8ENE3vzEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Condition &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Condition &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock &lt;> null)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_UxzAdHv0EeiMJZSAgKAykg" name="ConstraintBlockSupplier">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UxzAdXv0EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>if self.base_Class.clientDependency -> exists(d | d.extension_Predicate &lt;> null) then self.base_Class.clientDependency -> exists(d | d.extension_Predicate &lt;> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock &lt;> null)) else true endif</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0nULYHM_EeiGk6p11I42Qw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5N8YQHM_EeiGk6p11I42Qw" name="text">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_phfRAXNAEeiGk6p11I42Qw" name="base_Class" association="_phep8HNAEeiGk6p11I42Qw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eLFsUIxhEeimlMslVSHSwA" name="condition" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iyTIAIxhEeimlMslVSHSwA" name="predicate" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QSuUoI0tEeioPPDrGARP4g" name="statement" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VV6hsI0tEeioPPDrGARP4g" name="formalizationFor" type="_dm1hEHM5EeiGk6p11I42Qw" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4-S58I0uEeioPPDrGARP4g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4-ZAkI0uEeioPPDrGARP4g" value="*"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_eC0QsIFWEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/pbs.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eC0QsYFWEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eC0QsoFWEei2Pogsj-511A" key="image_name_key" value="icon_pbs"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eC0Qs4FWEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eC0QtIFWEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_phep8HNAEeiGk6p11I42Qw" name="E_PropertyBasedStatement_Class" memberEnd="_phfRAHNAEeiGk6p11I42Qw _phfRAXNAEeiGk6p11I42Qw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_phfRAHNAEeiGk6p11I42Qw" name="extension_PropertyBasedStatement" type="_uXH_sHM_EeiGk6p11I42Qw" aggregation="composite" association="_phep8HNAEeiGk6p11I42Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_2k948HNBEeiGk6p11I42Qw" name="TimedDomain">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HtwkgXpWEeieONEn5t91tg" name="base_Namespace" association="_Htv9cHpWEeieONEn5t91tg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Namespace"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_L6HUAIFYEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L6HUAYFYEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L6HUAoFYEei2Pogsj-511A" key="image_name_key" value="icon_timed"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L6HUA4FYEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L6HUBIFYEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4twKYHNBEeiGk6p11I42Qw" name="TimedEvent">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_NLLvAHvhEeiMJZSAgKAykg" name="AppliedOnPropertyBasedStatement">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NLMWEHvhEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.extension_PropertyBasedStatement &lt;> null</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_UpAygHvhEeiMJZSAgKAykg" name="ContainedInTimedDomainNamespace">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UpAygXvhEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.namespace.extension_TimedDomain &lt;> null</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UetM0HppEei1jrmsK3WGZw" name="repetition">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s4L5IHppEei1jrmsK3WGZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s4TN4HppEei1jrmsK3WGZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vRnOoHppEei1jrmsK3WGZw" name="every">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AAXD4HpqEei1jrmsK3WGZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AAcjcHpqEei1jrmsK3WGZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vQ1lcYFiEei2Pogsj-511A" name="base_Class" association="_vQ0-YIFiEei2Pogsj-511A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_J1nssIFYEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J1nssYFYEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J1nssoFYEei2Pogsj-511A" key="image_name_key" value="icon_timed"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J1nss4FYEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J1nstIFYEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_5vG5sHNBEeiGk6p11I42Qw" name="TimedDurationConstraint">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_pB5MoHvgEeiMJZSAgKAykg" name="ContainedInTimedDomainNamespace">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pB5zsHvgEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Constraint.namespace.extension_TimedDomain &lt;> null or self.base_Constraint.namespace.namespace.extension_TimedDomain &lt;> null</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3rlcMXpnEei1jrmsK3WGZw" name="base_Constraint" association="_3rjnAHpnEei1jrmsK3WGZw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Constraint"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_g3AJwHpqEei1jrmsK3WGZw" name="kind" type="_aOPGAHpqEei1jrmsK3WGZw"/>
+      <icon xmi:type="uml:Image" xmi:id="_G57XoIFYEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G57XoYFYEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G57XooFYEei2Pogsj-511A" key="image_name_key" value="icon_timed"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G57Xo4FYEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G57XpIFYEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_7m9MIHNBEeiGk6p11I42Qw" name="TimedInstantObservation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_jIwmUHvxEeiMJZSAgKAykg" name="AppliedOnPropertyBasedStatement">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jIwmUXvxEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.extension_PropertyBasedStatement &lt;> null</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_jIxNYHvxEeiMJZSAgKAykg" name="ContainedInTimedDomainNamespace">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jIxNYXvxEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Class.namespace.extension_TimedDomain &lt;> null</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lFSaAHpoEei1jrmsK3WGZw" name="obsKind" type="_NFwewHpoEei1jrmsK3WGZw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ub1kHpoEei1jrmsK3WGZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8uhVIHpoEei1jrmsK3WGZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_s85z8IFiEei2Pogsj-511A" name="base_Class" association="_s82JkIFiEei2Pogsj-511A">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="_A1tycIFYEei2Pogsj-511A" location="platform:/plugin/ca.ets.sofeess.specml.profile/icons/timed.png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1tycYFYEei2Pogsj-511A" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A1tycoFYEei2Pogsj-511A" key="image_name_key" value="icon_timed"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A1tyc4FYEei2Pogsj-511A" key="image_kind_key" value="icon"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EKCp8IFYEei2Pogsj-511A" key="image_expr_key" value="true"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_wfUzUHZVEei18bAN1gzIJQ" name="Formalization">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="__MBcwHvxEeiMJZSAgKAykg" name="RequirementClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="__MCD0HvxEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_OWA6sHvyEeiMJZSAgKAykg" name="DependencySupplierIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_OWA6sXvyEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.supplier -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_OWBhwHvyEeiMJZSAgKAykg" name="DependencyClientIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_OWBhwXvyEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kFa5kHjVEeiFr8DjfVFmyg" name="base_Dependency" association="_kFZrcHjVEeiFr8DjfVFmyg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_y6J3AHZVEei18bAN1gzIJQ" name="Condition">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_d8DmAHvzEeiMJZSAgKAykg" name="PropertyBasedStatementClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8DmAXvzEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_d8DmAnvzEeiMJZSAgKAykg" name="DependencySupplierIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8DmA3vzEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.supplier -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_d8ENEHvzEeiMJZSAgKAykg" name="DependencyClientIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8ENEXvzEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p-pWwnjVEeiFr8DjfVFmyg" name="base_Dependency" association="_p-pWwHjVEeiFr8DjfVFmyg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_0YVsQHZVEei18bAN1gzIJQ" name="Predicate">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_UxyZYHv0EeiMJZSAgKAykg" name="PropertyBasedStatementClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UxyZYXv0EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_UxzAcHv0EeiMJZSAgKAykg" name="DependencySupplierIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UxzAcXv0EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.supplier -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_UxzAcnv0EeiMJZSAgKAykg" name="DependencyClientIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UxzAc3v0EeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rBeFsXjVEeiFr8DjfVFmyg" name="base_Dependency" association="_rBdeoHjVEeiFr8DjfVFmyg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_kFZrcHjVEeiFr8DjfVFmyg" name="E_Formalization_Dependency" memberEnd="_kFaSgHjVEeiFr8DjfVFmyg _kFa5kHjVEeiFr8DjfVFmyg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_kFaSgHjVEeiFr8DjfVFmyg" name="extension_Formalization" type="_wfUzUHZVEei18bAN1gzIJQ" aggregation="composite" association="_kFZrcHjVEeiFr8DjfVFmyg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_p-pWwHjVEeiFr8DjfVFmyg" name="E_Condition_Dependency" memberEnd="_p-pWwXjVEeiFr8DjfVFmyg _p-pWwnjVEeiFr8DjfVFmyg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_p-pWwXjVEeiFr8DjfVFmyg" name="extension_Condition" type="_y6J3AHZVEei18bAN1gzIJQ" aggregation="composite" association="_p-pWwHjVEeiFr8DjfVFmyg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_rBdeoHjVEeiFr8DjfVFmyg" name="E_Predicate_Dependency" memberEnd="_rBeFsHjVEeiFr8DjfVFmyg _rBeFsXjVEeiFr8DjfVFmyg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_rBeFsHjVEeiFr8DjfVFmyg" name="extension_Predicate" type="_0YVsQHZVEei18bAN1gzIJQ" aggregation="composite" association="_rBdeoHjVEeiFr8DjfVFmyg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Htv9cHpWEeieONEn5t91tg" name="E_TimedDomain_Namespace" memberEnd="_HtwkgHpWEeieONEn5t91tg _HtwkgXpWEeieONEn5t91tg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_HtwkgHpWEeieONEn5t91tg" name="extension_TimedDomain" type="_2k948HNBEeiGk6p11I42Qw" aggregation="composite" association="_Htv9cHpWEeieONEn5t91tg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_3rjnAHpnEei1jrmsK3WGZw" name="E_TimedDurationConstraint_Constraint" memberEnd="_3rlcMHpnEei1jrmsK3WGZw _3rlcMXpnEei1jrmsK3WGZw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_3rlcMHpnEei1jrmsK3WGZw" name="extension_TimedDurationConstraint" type="_5vG5sHNBEeiGk6p11I42Qw" aggregation="composite" association="_3rjnAHpnEei1jrmsK3WGZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_NFwewHpoEei1jrmsK3WGZw" name="EventKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QlGTcHpoEei1jrmsK3WGZw" name="start"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TOafEHpoEei1jrmsK3WGZw" name="finish"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T_G8MHpoEei1jrmsK3WGZw" name="send"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VNHncHpoEei1jrmsK3WGZw" name="receive"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V-faAHpoEei1jrmsK3WGZw" name="consume"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aOPGAHpqEei1jrmsK3WGZw" name="ConstraintKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bvp1cHpqEei1jrmsK3WGZw" name="required"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_damUUHpqEei1jrmsK3WGZw" name="offered"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eGYcQHpqEei1jrmsK3WGZw" name="contract"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_jmTWMHuqEeiMJZSAgKAykg" name="Trace" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_IaoZoHurEeiMJZSAgKAykg" name="DependencyClientIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IapAsHurEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_bETqgHurEeiMJZSAgKAykg" name="DependencySupplierIsUnique">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bEURkHurEeiMJZSAgKAykg" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.supplier -> size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Ja4U8H2IEei6DLxmsiFXTA" name="RequirementClient">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ja4U8X2IEei6DLxmsiFXTA" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement &lt;> null)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rx3pcHuqEeiMJZSAgKAykg" name="base_Dependency" association="_rxw7wHuqEeiMJZSAgKAykg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_rxw7wHuqEeiMJZSAgKAykg" name="E_Trace_Dependency" memberEnd="_rx3CYHuqEeiMJZSAgKAykg _rx3pcHuqEeiMJZSAgKAykg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_rx3CYHuqEeiMJZSAgKAykg" name="extension_Trace" type="_jmTWMHuqEeiMJZSAgKAykg" aggregation="composite" association="_rxw7wHuqEeiMJZSAgKAykg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_QbNgwH_QEeiBHb9GNlmRuQ" name="Spec">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R9sAIH_QEeiBHb9GNlmRuQ" name="base_Package" association="_R9o80H_QEeiBHb9GNlmRuQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_R9o80H_QEeiBHb9GNlmRuQ" name="E_Spec_Package" memberEnd="_R9rZEH_QEeiBHb9GNlmRuQ _R9sAIH_QEeiBHb9GNlmRuQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_R9rZEH_QEeiBHb9GNlmRuQ" name="extension_Spec" type="_QbNgwH_QEeiBHb9GNlmRuQ" aggregation="composite" association="_R9o80H_QEeiBHb9GNlmRuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_s82JkIFiEei2Pogsj-511A" name="E_TimedInstantObservation_Class" memberEnd="_s85M4IFiEei2Pogsj-511A _s85z8IFiEei2Pogsj-511A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_s85M4IFiEei2Pogsj-511A" name="extension_TimedInstantObservation" type="_7m9MIHNBEeiGk6p11I42Qw" aggregation="composite" association="_s82JkIFiEei2Pogsj-511A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_vQ0-YIFiEei2Pogsj-511A" name="E_TimedEvent_Class" memberEnd="_vQ1lcIFiEei2Pogsj-511A _vQ1lcYFiEei2Pogsj-511A">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_vQ1lcIFiEei2Pogsj-511A" name="extension_TimedEvent" type="_4twKYHNBEeiGk6p11I42Qw" aggregation="composite" association="_vQ0-YIFiEei2Pogsj-511A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_rN_1kB23EemRvYln_4a8Hw" name="Data" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CG-YcB24EemRvYln_4a8Hw" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_noTr0B24EemRvYln_4a8Hw" name="rationale">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rQCAcB24EemRvYln_4a8Hw" name="displayName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1OMSsB24EemRvYln_4a8Hw" name="source" type="_SqQpUHM6EeiGk6p11I42Qw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6faUsB24EemRvYln_4a8Hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fhpcB24EemRvYln_4a8Hw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8gliQB24EemRvYln_4a8Hw" name="creationNotes">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B_O8QB25EemRvYln_4a8Hw" name="maintenanceNotes">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FzTDwB25EemRvYln_4a8Hw" name="usageNotes">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LU65QB25EemRvYln_4a8Hw" name="creationDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ShBTkB25EemRvYln_4a8Hw" name="modificationDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_V9Pi0B25EemRvYln_4a8Hw" name="revision">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0waVEB25EemRvYln_4a8Hw" name="otherMetadata" type="_T1mv0B3YEemhz_OUxpQUNA" aggregation="composite" association="_0wTAUB25EemRvYln_4a8Hw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6JnOYB25EemRvYln_4a8Hw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6JqRsB25EemRvYln_4a8Hw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0wTAUB25EemRvYln_4a8Hw" memberEnd="_0waVEB25EemRvYln_4a8Hw _0wbjMB25EemRvYln_4a8Hw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0wYf4B25EemRvYln_4a8Hw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0wZG8B25EemRvYln_4a8Hw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0wbjMB25EemRvYln_4a8Hw" name="data" type="_rN_1kB23EemRvYln_4a8Hw" association="_0wTAUB25EemRvYln_4a8Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Gwl9AB26EemRvYln_4a8Hw" name="FieldData">
+      <generalization xmi:type="uml:Generalization" xmi:id="_vBOvQB26EemRvYln_4a8Hw" general="_rN_1kB23EemRvYln_4a8Hw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_H_upoB26EemRvYln_4a8Hw" name="possibleValues">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sAKK8B26EemRvYln_4a8Hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sAMAIB26EemRvYln_4a8Hw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_J5aIEB26EemRvYln_4a8Hw" name="format">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LmOPMB26EemRvYln_4a8Hw" name="length">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MrEXYB26EemRvYln_4a8Hw" name="defaultValue">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QzSxAB26EemRvYln_4a8Hw" name="isRequired">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TaZWIB26EemRvYln_4a8Hw" name="isReadOnly">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Xp9G0B26EemRvYln_4a8Hw" name="isUnique">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aq-n0B26EemRvYln_4a8Hw" name="encoding">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Fbk1YR27EemRvYln_4a8Hw" name="base_Property" association="_FbkOUB27EemRvYln_4a8Hw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Dh1FgB27EemRvYln_4a8Hw" name="E_EntityData_Class55" memberEnd="_Dh26sB27EemRvYln_4a8Hw _vpgc8B3KEem9SqNdUbf9gQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Dh26sB27EemRvYln_4a8Hw" name="extension_EntityData" type="_os-vsB3KEem9SqNdUbf9gQ" aggregation="composite" association="_Dh1FgB27EemRvYln_4a8Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_FbkOUB27EemRvYln_4a8Hw" name="E_FieldData_Property54" memberEnd="_Fbk1YB27EemRvYln_4a8Hw _Fbk1YR27EemRvYln_4a8Hw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Fbk1YB27EemRvYln_4a8Hw" name="extension_FieldData" type="_Gwl9AB26EemRvYln_4a8Hw" aggregation="composite" association="_FbkOUB27EemRvYln_4a8Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_os-vsB3KEem9SqNdUbf9gQ" name="EntityData">
+      <generalization xmi:type="uml:Generalization" xmi:id="_rKJVsB3KEem9SqNdUbf9gQ" general="_rN_1kB23EemRvYln_4a8Hw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vpgc8B3KEem9SqNdUbf9gQ" name="base_Class" association="_Dh1FgB27EemRvYln_4a8Hw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_T1mv0B3YEemhz_OUxpQUNA" name="DataAttribute">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dHKy4B25EemRvYln_4a8Hw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fYANEB25EemRvYln_4a8Hw" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uxbk0HM5EeiGk6p11I42Qw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uxcy8HM5EeiGk6p11I42Qw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_3QITUHl3EeifbvI6S6Y6jQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3QMkwHl3EeifbvI6S6Y6jQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/dsmlvalidation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DSMLValidation_PROFILES/PapyrusValidationRuleDSML.uml#__sUW0OhNEeCjcc2EgK3Uwg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uHgpgEkeEemmQPLTb5pSfw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uHnXMEkeEemmQPLTb5pSfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_fQfQsHujEeiMJZSAgKAykg" base_Constraint="_iLDGUHtAEeiXwK0JEBevxg" statusCode="3" message="{0} must copy a system requirement allocated to software" description="{0} must copy a system requirement allocated to software" id="CopyConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_gCq7kHujEeiMJZSAgKAykg" base_Constraint="_HZMbIHtFEeiXwK0JEBevxg" statusCode="2" message="{0} must have a client stereotyped by HighLevelRequirement" description="{0} must have a client stereotyped by HighLevelRequirement" id="CopyConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_gueRoHujEeiMJZSAgKAykg" base_Constraint="_NSFEoHtGEeiXwK0JEBevxg" statusCode="4" message="{0} must copy the text of the higher-level requirement" description="{0} must copy the text of the higher-level requirement" id="CopyConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_sTNqsHukEeiMJZSAgKAykg" base_Constraint="__JinMHtGEeiXwK0JEBevxg" statusCode="3" message="{0} must be coupled with another system requirement allocated to software" description="{0} must be coupled with another system requirement allocated to software" id="CoupledConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_tB25YHukEeiMJZSAgKAykg" base_Constraint="_ta9QIHtHEeiXwK0JEBevxg" statusCode="3" message="{0} must be coupled with another high-level requirement" description="{0} must be coupled with another high-level requirement" id="CoupledConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_t2xvMHukEeiMJZSAgKAykg" base_Constraint="_4yfJEHtHEeiXwK0JEBevxg" statusCode="3" message="{0} must be coupled with another low-level requirement" description="{0} must be coupled with another low-level requirement" id="CoupledConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_SZ44EHurEeiMJZSAgKAykg" base_Constraint="_IaoZoHurEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one client" description="{0} must have exactly one client" id="TraceConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_fKnYkHurEeiMJZSAgKAykg" base_Constraint="_bETqgHurEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one supplier" description="{0} must have exactly one supplier" id="TraceConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_wQwLYHuxEeiMJZSAgKAykg" base_Constraint="_R5-aMHuxEeiMJZSAgKAykg" statusCode="3" message="{0} must derive another high-level requirement" description="{0} must derive another high-level requirement" id="DeriveConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_xEIwIHuxEeiMJZSAgKAykg" base_Constraint="_e6UrEHuxEeiMJZSAgKAykg" statusCode="3" message="{0} must derive another low-level requirement" description="{0} must derive another low-level requirement" id="DeriveConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Ttfw0HuyEeiMJZSAgKAykg" base_Constraint="_G5cPgHuyEeiMJZSAgKAykg" statusCode="2" message="{0} must have a derived requirement as client" description="{0} must have a derived requirement as client" id="DeriveConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_3K4IEHu1EeiMJZSAgKAykg" isEnabledByDefault="false" base_Constraint="_xcpZ8Hu1EeiMJZSAgKAykg" statusCode="4" message="{0} must only be stereotyped by one requirement subtype" description="{0} must only be stereotyped by one requirement subtype" class="" id="RequirementConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_4d1iwHvLEeiMJZSAgKAykg" base_Constraint="_DoFsIHu1EeiMJZSAgKAykg" message="{0} must refine or copy a system requirement allocated to software" description="{0} must refine or copy a system requirement allocated to software" id="HLRConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_TUQLkHvMEeiMJZSAgKAykg" base_Constraint="_TUL6IHvMEeiMJZSAgKAykg" statusCode="3" message="{0} must derive another high-level requirement" description="{0} must derive another high-level requirement" id="HLRConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_u77SM3vMEeiMJZSAgKAykg" base_Constraint="_u74O4HvMEeiMJZSAgKAykg" message="{0} requires a rationale justifying the existence of the design detail" description="{0} requires a rationale justifying the existence of the design detail" id="HLRConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_xFLBMHvNEeiMJZSAgKAykg" base_Constraint="_xFHW0HvNEeiMJZSAgKAykg" message="{0} requires a rationale justifying the existence of the verification detail" description="{0} requires a rationale justifying the existence of the verification detail" id="HLRConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_l2BLsHvOEeiMJZSAgKAykg" base_Constraint="_TVJRgHvOEeiMJZSAgKAykg" statusCode="3" message="{0} must refine a high-level requirement" description="{0} must refine a high-level requirement" id="LLRConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_u2siA3vOEeiMJZSAgKAykg" base_Constraint="_u2pesHvOEeiMJZSAgKAykg" statusCode="3" message="{0} must derive another low-level requirement" description="{0} must derive another low-level requirement" id="LLRConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_KEm2EHvVEeiMJZSAgKAykg" base_Constraint="_7IIhoHvSEeiMJZSAgKAykg" statusCode="4" message="{0} must not nest other classifiers" description="{0} must not nest other classifiers" id="PropertyBasedStatementConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_YN6TEHvVEeiMJZSAgKAykg" base_Constraint="_YN1akHvVEeiMJZSAgKAykg" statusCode="4" message="{0} must not participate in associations" description="{0} must not participate in associations" id="PropertyBasedStatementConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_KSqDsHvWEeiMJZSAgKAykg" base_Constraint="_KSlLMHvWEeiMJZSAgKAykg" statusCode="4" message="{0} must not participate in generalizations" description="{0} must not participate in generalizations" id="PropertyBasedStatementConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_71xG4HvWEeiMJZSAgKAykg" base_Constraint="_50dWcHvWEeiMJZSAgKAykg" statusCode="4" message="{0} must not own any attributes" description="{0} must not own any attributes" id="PropertyBasedStatementConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_HfimYHvXEeiMJZSAgKAykg" base_Constraint="_HffjEHvXEeiMJZSAgKAykg" statusCode="4" message="{0} must not own any operations" description="{0} must not own any operations" id="PropertyBasedStatementConstraint5"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_XC-fEHvXEeiMJZSAgKAykg" base_Constraint="_XC7bwHvXEeiMJZSAgKAykg" statusCode="4" message="{0} must not be stereotyped by other types" description="{0} must not be stereotyped by other types" id="PropertyBasedStatementConstraint5"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_N2fE4HvYEeiMJZSAgKAykg" base_Constraint="_N2d2wHvYEeiMJZSAgKAykg" statusCode="3" message="{0} must refine a system requirement allocated to software" description="{0} must refine a system requirement allocated to software" id="RefineReqtConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_N2fr8HvYEeiMJZSAgKAykg" base_Constraint="_N2ed0HvYEeiMJZSAgKAykg" statusCode="3" message="{0} must refine a high-level requirement" description="{0} must refine a high-level requirement" id="RefineReqtConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_N2gTAHvYEeiMJZSAgKAykg" base_Constraint="_N2ed1HvYEeiMJZSAgKAykg" statusCode="2" message="{0} cannot have as client a derived requirement" description="{0} cannot have as client a derived requirement" id="RefineReqtConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_N2gTAXvYEeiMJZSAgKAykg" base_Constraint="_N2ed1nvYEeiMJZSAgKAykg" statusCode="2" message="{0} cannot have as supplier a derived requirement" description="{0} cannot have as supplier a derived requirement" id="RefineReqtConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_9QpCEHvZEeiMJZSAgKAykg" base_Constraint="_9QkwoHvZEeiMJZSAgKAykg" statusCode="4" message="{0} must have a unique ID" description="{0} must have a unique ID" id="PropertyBasedStatementConstraint6"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_pmxNkHvbEeiMJZSAgKAykg" base_Constraint="_pmwmgHvbEeiMJZSAgKAykg" statusCode="4" message="{0} must have a unique ID" description="{0} must have a unique ID" id="RequirementConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_nhpCMHvdEeiMJZSAgKAykg" base_Constraint="_nhkwwHvdEeiMJZSAgKAykg" message="{0} is a derived requirement and must be justified by a rationale" description="{0} is a derived requirement and must be justified by a rationale" id="RequirementConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_q_gawHveEeiMJZSAgKAykg" base_Constraint="_q_elkHveEeiMJZSAgKAykg" statusCode="4" message="{0} must not nest other classifiers" description="{0} must not nest other classifiers" id="RequirementConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_q_hB0HveEeiMJZSAgKAykg" base_Constraint="_q_fMoHveEeiMJZSAgKAykg" statusCode="4" message="{0} must not participate in associations" description="{0} must not participate in associations" id="RequirementConstraint5"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_q_hB0XveEeiMJZSAgKAykg" base_Constraint="_q_fMonveEeiMJZSAgKAykg" statusCode="4" message="{0} must not participate in generalizations" description="{0} must not participate in generalizations" id="RequirementConstraint6"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_q_ho4HveEeiMJZSAgKAykg" base_Constraint="_q_fzsHveEeiMJZSAgKAykg" statusCode="4" message="{0} must not own any attributes" description="{0} must not own any attributes" id="RequirementConstraint7"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_q_ho4XveEeiMJZSAgKAykg" base_Constraint="_q_fzsnveEeiMJZSAgKAykg" statusCode="4" message="{0} must not own any operations" description="{0} must not own any operations" id="RequirementConstraint8"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_97eDkHvgEeiMJZSAgKAykg" base_Constraint="_pB5MoHvgEeiMJZSAgKAykg" statusCode="4" message="{0} must be contained in a namespace stereotyped by TimedDomain" description="{0} must be contained in a namespace stereotyped by TimedDomain" id="TimedDurationConstraintConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_SUiOcHvhEeiMJZSAgKAykg" base_Constraint="_NLLvAHvhEeiMJZSAgKAykg" statusCode="4" message="{0} must be applied to a property-based statement" description="{0} must be applied to a property-based statement" id="TimedEventConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_UpBZkHvhEeiMJZSAgKAykg" base_Constraint="_UpAygHvhEeiMJZSAgKAykg" statusCode="4" message="{0} must be contained in a namespace stereotyped by TimedDomain" description="{0} must be contained in a namespace stereotyped by TimedDomain" id="TimedEventConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_jIxNYnvxEeiMJZSAgKAykg" base_Constraint="_jIwmUHvxEeiMJZSAgKAykg" statusCode="4" message="{0} must be applied to a property-based statement" description="{0} must be applied to a property-based statement" id="TimedInstantObservationConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_jIx0cHvxEeiMJZSAgKAykg" base_Constraint="_jIxNYHvxEeiMJZSAgKAykg" statusCode="4" message="{0} must be contained in a namespace stereotyped by TimedDomain" description="{0} must be contained in a namespace stereotyped by TimedDomain" id="TimedInstantObservationConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Bwin8HvyEeiMJZSAgKAykg" base_Constraint="__MBcwHvxEeiMJZSAgKAykg" statusCode="2" message="{0} must have a requirement as client" description="{0} must have a requirement as client" id="FormalizationConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_OWBhwnvyEeiMJZSAgKAykg" base_Constraint="_OWA6sHvyEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one supplier" description="{0} must have exactly one supplier" id="FormalizationConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_OWCI0HvyEeiMJZSAgKAykg" base_Constraint="_OWBhwHvyEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one client" description="{0} must have exactly one client" id="FormalizationConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_9k3cQ3vyEeiMJZSAgKAykg" base_Constraint="_9kzK0HvyEeiMJZSAgKAykg" statusCode="3" message="{0} must be formalized by a property-based statement" description="{0} must be formalized by a property-based statement" id="FormalizationConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_d8ENFHvzEeiMJZSAgKAykg" base_Constraint="_d8DmAHvzEeiMJZSAgKAykg" statusCode="2" message="{0} must have a propert-based statement as client" description="{0} must have a propert-based statement as client" id="ConditionConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_d8E0IHvzEeiMJZSAgKAykg" base_Constraint="_d8DmAnvzEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one supplier" description="{0} must have exactly one supplier" id="ConditionConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_d8FbMHvzEeiMJZSAgKAykg" base_Constraint="_d8ENEHvzEeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one client" description="{0} must have exactly one client" id="ConditionConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_d8FbMXvzEeiMJZSAgKAykg" base_Constraint="_d8ENEnvzEeiMJZSAgKAykg" statusCode="3" message="{0} must have a constraint block as condition" description="{0} must have a constraint block as condition" id="ConditionConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_UxzngHv0EeiMJZSAgKAykg" base_Constraint="_UxyZYHv0EeiMJZSAgKAykg" statusCode="2" message="{0} must have a propert-based statement as client" description="{0} must have a propert-based statement as client" id="PredicateConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Ux0OkHv0EeiMJZSAgKAykg" base_Constraint="_UxzAcHv0EeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one supplier" description="{0} must have exactly one supplier" id="PredicateConstraint2"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Ux0OkXv0EeiMJZSAgKAykg" base_Constraint="_UxzAcnv0EeiMJZSAgKAykg" statusCode="2" message="{0} must have exactly one client" description="{0} must have exactly one client" id="PredicateConstraint1"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Ux01oHv0EeiMJZSAgKAykg" base_Constraint="_UxzAdHv0EeiMJZSAgKAykg" statusCode="3" message="{0} must have a constraint block as predicate" description="{0} must have a constraint block as predicate" id="PredicateConstraint4"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_Ja5jEH2IEei6DLxmsiFXTA" base_Constraint="_Ja4U8H2IEei6DLxmsiFXTA" statusCode="2" message="{0} must have a client stereotyped by a subtype of Requirement" description="{0} must have a client stereotyped by a subtype of Requirement" id="TraceConstraint3"/>
+  <PapyrusDSMLValidationRule:ValidationRule xmi:id="_hJCScH4vEeizDYr1I7J54w" base_Constraint="_-ga0sH2WEei6DLxmsiFXTA" statusCode="3" message="{0} requires a formalization" description="{0} requires a formalization" id="RequirementConstraint9"/>
+  <Ecore:EPackage xmi:id="_vMCBkEkeEemmQPLTb5pSfw" base_Package="_EohtkHMyEeiGk6p11I42Qw" packageName="specml" nsPrefix="specml" nsURI="http://www.etsmtl.ca/sofeess/specml" basePackage="ca.ets.sofeess" prefix="SpecML"/>
+</xmi:XMI>

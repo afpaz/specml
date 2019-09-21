@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="680 176 16 16" width="16" height="16">
+  <defs/>
+  <metadata> Produced by OmniGraffle 7.9.2 
+    <dc:date>2018-11-21 01:17:23 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_7"/>
+      <g id="Group_8">
+        <g id="Graphic_6">
+          <title>Folder Open</title>
+          <path d="M 694.34645 179.29134 L 688.1102 179.29134 L 686.5512 177.73228 L 681.874 177.73228 C 681.0165 177.73228 680.32275 178.43386 680.32275 179.29134 L 680.31496 188.64567 C 680.31496 189.50315 681.0165 190.20472 681.874 190.20472 L 694.34645 190.20472 C 695.2039 190.20472 695.9055 189.50315 695.9055 188.64567 L 695.9055 180.8504 C 695.9055 179.99291 695.2039 179.29134 694.34645 179.29134 Z M 694.34645 188.64567 L 681.874 188.64567 L 681.874 180.8504 L 694.34645 180.8504 L 694.34645 188.64567 Z" fill="#3a8eed"/>
+        </g>
+        <g id="Graphic_5">
+          <title>Send</title>
+          <path d="M 684.9951 187.805 L 691.22834 184.68688 L 684.9951 181.56877 L 684.9921 183.99397 L 689.4466 184.68688 L 684.9921 185.3798 Z" fill="#3a8eed"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

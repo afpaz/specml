@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?>
+<!--
+  Copyright (c) 2016-2019 ÉTS
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      https://www.apache.org/licenses/LICENSE-2.0
+      
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<plugin>
+                                                            
+   
+   
+         
+   
+      
+   
+      
+   
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+                           
+   
+   
+   
+   
+   
+   
+   
+                        
+
+
+
+
+
+
+
+
+   <extension name="dsml.validation.generated.spec" point="org.eclipse.emf.validation.constraintProviders">
+      <category id="ca.ets.sofeess.specml.validation.spec" mandatory="false" name="ca.ets.sofeess.specml.validation.spec"/>
+      <constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.etsmtl.ca/sofeess/specml"/>
+         <constraints categories="ca.ets.sofeess.specml.validation.spec">
+            <constraint id="RequirementConstraint1" isEnabledByDefault="false" lang="OCLpivot" mode="Batch" name="OnlyOneRequirementSubtype" severity="ERROR" statusCode="4">
+               <message>{0} must only be stereotyped by one requirement subtype</message>
+               <description>{0} must only be stereotyped by one requirement subtype</description>
+               <![CDATA[self.base_Class.extension_Requirement -> size() = 1]]>
+            </constraint>
+            <constraint id="RequirementConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="IDMustBeUnique" severity="ERROR" statusCode="4">
+               <message>{0} must have a unique ID</message>
+               <description>{0} must have a unique ID</description>
+               <![CDATA[Requirement.allInstances() -> isUnique(id)]]>
+            </constraint>
+            <constraint id="RequirementConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RationaleIsRequired" severity="ERROR" statusCode="1">
+               <message>{0} is a derived requirement and must be justified by a rationale</message>
+               <description>{0} is a derived requirement and must be justified by a rationale</description>
+               <![CDATA[self.isDerived implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale <> null)]]>
+            </constraint>
+            <constraint id="RequirementConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoNestedClassifiers" severity="ERROR" statusCode="4">
+               <message>{0} must not nest other classifiers</message>
+               <description>{0} must not nest other classifiers</description>
+               <![CDATA[self.base_Class.nestedClassifier -> isEmpty()]]>
+            </constraint>
+            <constraint id="RequirementConstraint5" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoAssociations" severity="ERROR" statusCode="4">
+               <message>{0} must not participate in associations</message>
+               <description>{0} must not participate in associations</description>
+               <![CDATA[self.base_Class.association -> isEmpty()]]>
+            </constraint>
+            <constraint id="RequirementConstraint6" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoGeneralizations" severity="ERROR" statusCode="4">
+               <message>{0} must not participate in generalizations</message>
+               <description>{0} must not participate in generalizations</description>
+               <![CDATA[self.base_Class.generalization -> isEmpty()]]>
+            </constraint>
+            <constraint id="RequirementConstraint7" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoOwnedAttributes" severity="ERROR" statusCode="4">
+               <message>{0} must not own any attributes</message>
+               <description>{0} must not own any attributes</description>
+               <![CDATA[self.base_Class.ownedAttribute -> isEmpty()]]>
+            </constraint>
+            <constraint id="RequirementConstraint8" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoOwnedOperations" severity="ERROR" statusCode="4">
+               <message>{0} must not own any operations</message>
+               <description>{0} must not own any operations</description>
+               <![CDATA[self.base_Class.ownedOperation -> isEmpty()]]>
+            </constraint>
+            <constraint id="CopyConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="IfCopyTextIsReadOnly" severity="ERROR" statusCode="4">
+               <message>{0} must copy the text of the higher-level requirement</message>
+               <description>{0} must copy the text of the higher-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.text = self.text)) else true endif]]>
+            </constraint>
+            <constraint id="FormalizationConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="PropertyBasedStatementSupplier" severity="ERROR" statusCode="3">
+               <message>{0} must be formalized by a property-based statement</message>
+               <description>{0} must be formalized by a property-based statement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Formalization <> null) then self.base_Class.clientDependency -> exists(d | d.extension_Formalization <> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_PropertyBasedStatement <> null)) else true endif]]>
+            </constraint>
+            <constraint id="RequirementConstraint9" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RequirementFormalizationIsRequired" severity="ERROR" statusCode="3">
+               <message>{0} requires a formalization</message>
+               <description>{0} requires a formalization</description>
+               <![CDATA[self.isFormalizable implies self.base_Class.clientDependency -> exists(d | d.extension_Formalization <> null)]]>
+            </constraint>
+            <constraint id="CoupledConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="CoupledWithAnotherSRATS" severity="ERROR" statusCode="3">
+               <message>{0} must be coupled with another system requirement allocated to software</message>
+               <description>{0} must be coupled with another system requirement allocated to software</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif]]>
+            </constraint>
+            <constraint id="HLRConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="TraceDependencyIsRequired" severity="ERROR" statusCode="1">
+               <message>{0} must refine or copy a system requirement allocated to software</message>
+               <description>{0} must refine or copy a system requirement allocated to software</description>
+               <![CDATA[not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt) <> d.extension_Trace.oclIsKindOf(Copy))]]>
+            </constraint>
+            <constraint id="HLRConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DerivedHLR" severity="ERROR" statusCode="3">
+               <message>{0} must derive another high-level requirement</message>
+               <description>{0} must derive another high-level requirement</description>
+               <![CDATA[self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive))]]>
+            </constraint>
+            <constraint id="HLRConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DesignDetailRequiresRationale" severity="ERROR" statusCode="1">
+               <message>{0} requires a rationale justifying the existence of the design detail</message>
+               <description>{0} requires a rationale justifying the existence of the design detail</description>
+               <![CDATA[self.describesDesignDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale <> null)]]>
+            </constraint>
+            <constraint id="HLRConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="VerificationDetailRequiresRationale" severity="ERROR" statusCode="1">
+               <message>{0} requires a rationale justifying the existence of the verification detail</message>
+               <description>{0} requires a rationale justifying the existence of the verification detail</description>
+               <![CDATA[self.describesVerificationDetail implies self.base_Class.ownedComment -> exists(c | c.extension_Rationale <> null)]]>
+            </constraint>
+            <constraint id="CopyConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="CopyAnSRATS" severity="ERROR" statusCode="3">
+               <message>{0} must copy a system requirement allocated to software</message>
+               <description>{0} must copy a system requirement allocated to software</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Copy)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Copy) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif]]>
+            </constraint>
+            <constraint id="CoupledConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="CoupledWithAnotherHLR" severity="ERROR" statusCode="3">
+               <message>{0} must be coupled with another high-level requirement</message>
+               <description>{0} must be coupled with another high-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif]]>
+            </constraint>
+            <constraint id="DeriveConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DeriveAnHLR" severity="ERROR" statusCode="3">
+               <message>{0} must derive another high-level requirement</message>
+               <description>{0} must derive another high-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif]]>
+            </constraint>
+            <constraint id="RefineReqtConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RefineAnSRATS" severity="ERROR" statusCode="3">
+               <message>{0} must refine a system requirement allocated to software</message>
+               <description>{0} must refine a system requirement allocated to software</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(SystemRequirement) and s.oclAsType(Class).extension_Requirement.oclAsType(SystemRequirement).allocatedToSoftware = true)) else true endif]]>
+            </constraint>
+            <constraint id="LLRConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RefineDependencyIsRequired" severity="ERROR" statusCode="3">
+               <message>{0} must refine a high-level requirement</message>
+               <description>{0} must refine a high-level requirement</description>
+               <![CDATA[not self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt))]]>
+            </constraint>
+            <constraint id="LLRConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DerivedLLR" severity="ERROR" statusCode="3">
+               <message>{0} must derive another low-level requirement</message>
+               <description>{0} must derive another low-level requirement</description>
+               <![CDATA[self.isDerived implies self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive))]]>
+            </constraint>
+            <constraint id="CoupledConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="CoupledWithAnotherLLR" severity="ERROR" statusCode="3">
+               <message>{0} must be coupled with another low-level requirement</message>
+               <description>{0} must be coupled with another low-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Coupled) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif]]>
+            </constraint>
+            <constraint id="DeriveConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DeriveAnLLR" severity="ERROR" statusCode="3">
+               <message>{0} must derive another low-level requirement</message>
+               <description>{0} must derive another low-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(Derive) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(LowLevelRequirement))) else true endif]]>
+            </constraint>
+            <constraint id="RefineReqtConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RefineAnHLR" severity="ERROR" statusCode="3">
+               <message>{0} must refine a high-level requirement</message>
+               <description>{0} must refine a high-level requirement</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt)) then self.base_Class.clientDependency -> exists(d | d.extension_Trace <> null and d.extension_Trace.oclIsKindOf(RefineReqt) and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_Requirement <> null and s.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))) else true endif]]>
+            </constraint>
+            <constraint id="RefineReqtConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ClientIsNotADerivedRequirement" severity="ERROR" statusCode="2">
+               <message>{0} cannot have as client a derived requirement</message>
+               <description>{0} cannot have as client a derived requirement</description>
+               <![CDATA[true]]>
+            </constraint>
+            <constraint id="RefineReqtConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="SupplierIsNotADerivedRequirement" severity="ERROR" statusCode="2">
+               <message>{0} cannot have as supplier a derived requirement</message>
+               <description>{0} cannot have as supplier a derived requirement</description>
+               <![CDATA[true]]>
+            </constraint>
+            <constraint id="CopyConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="HLRClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a client stereotyped by HighLevelRequirement</message>
+               <description>{0} must have a client stereotyped by HighLevelRequirement</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement <> null and c.oclAsType(Class).extension_Requirement.oclIsKindOf(HighLevelRequirement))]]>
+            </constraint>
+            <constraint id="DeriveConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DerivedRequirementClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a derived requirement as client</message>
+               <description>{0} must have a derived requirement as client</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement <> null and c.oclAsType(Class).extension_Requirement.isDerived)]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoNestedClassifiers" severity="ERROR" statusCode="4">
+               <message>{0} must not nest other classifiers</message>
+               <description>{0} must not nest other classifiers</description>
+               <![CDATA[self.base_Class.nestedClassifier -> isEmpty()]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoAssociations" severity="ERROR" statusCode="4">
+               <message>{0} must not participate in associations</message>
+               <description>{0} must not participate in associations</description>
+               <![CDATA[self.base_Class.association -> isEmpty()]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoGeneralizations" severity="ERROR" statusCode="4">
+               <message>{0} must not participate in generalizations</message>
+               <description>{0} must not participate in generalizations</description>
+               <![CDATA[self.base_Class.generalization -> isEmpty()]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoOwnedAttributes" severity="ERROR" statusCode="4">
+               <message>{0} must not own any attributes</message>
+               <description>{0} must not own any attributes</description>
+               <![CDATA[self.base_Class.ownedAttribute -> isEmpty()]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint5" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoOwnedOperations" severity="ERROR" statusCode="4">
+               <message>{0} must not own any operations</message>
+               <description>{0} must not own any operations</description>
+               <![CDATA[self.base_Class.ownedOperation -> isEmpty()]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint5" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="NoOtherStereotype" severity="ERROR" statusCode="4">
+               <message>{0} must not be stereotyped by other types</message>
+               <description>{0} must not be stereotyped by other types</description>
+               <![CDATA[self.base_Class.extension -> size() = 1]]>
+            </constraint>
+            <constraint id="PropertyBasedStatementConstraint6" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="IDMustBeUnique" severity="ERROR" statusCode="4">
+               <message>{0} must have a unique ID</message>
+               <description>{0} must have a unique ID</description>
+               <![CDATA[PropertyBasedStatement.allInstances() -> isUnique(id)]]>
+            </constraint>
+            <constraint id="ConditionConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ConstraintBlockSupplier" severity="ERROR" statusCode="3">
+               <message>{0} must have a constraint block as condition</message>
+               <description>{0} must have a constraint block as condition</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Condition <> null) then self.base_Class.clientDependency -> exists(d | d.extension_Condition <> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock <> null)) else true endif]]>
+            </constraint>
+            <constraint id="PredicateConstraint4" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ConstraintBlockSupplier" severity="ERROR" statusCode="3">
+               <message>{0} must have a constraint block as predicate</message>
+               <description>{0} must have a constraint block as predicate</description>
+               <![CDATA[if self.base_Class.clientDependency -> exists(d | d.extension_Predicate <> null) then self.base_Class.clientDependency -> exists(d | d.extension_Predicate <> null and d.supplier -> exists(s | s.oclIsKindOf(Class) and s.oclAsType(Class).extension_ConstraintBlock <> null)) else true endif]]>
+            </constraint>
+            <constraint id="TimedEventConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="AppliedOnPropertyBasedStatement" severity="ERROR" statusCode="4">
+               <message>{0} must be applied to a property-based statement</message>
+               <description>{0} must be applied to a property-based statement</description>
+               <![CDATA[self.base_Class.extension_PropertyBasedStatement <> null]]>
+            </constraint>
+            <constraint id="TimedEventConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ContainedInTimedDomainNamespace" severity="ERROR" statusCode="4">
+               <message>{0} must be contained in a namespace stereotyped by TimedDomain</message>
+               <description>{0} must be contained in a namespace stereotyped by TimedDomain</description>
+               <![CDATA[self.base_Class.namespace.extension_TimedDomain <> null]]>
+            </constraint>
+            <constraint id="TimedDurationConstraintConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ContainedInTimedDomainNamespace" severity="ERROR" statusCode="4">
+               <message>{0} must be contained in a namespace stereotyped by TimedDomain</message>
+               <description>{0} must be contained in a namespace stereotyped by TimedDomain</description>
+               <![CDATA[self.base_Constraint.namespace.extension_TimedDomain <> null or self.base_Constraint.namespace.namespace.extension_TimedDomain <> null]]>
+            </constraint>
+            <constraint id="TimedInstantObservationConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="AppliedOnPropertyBasedStatement" severity="ERROR" statusCode="4">
+               <message>{0} must be applied to a property-based statement</message>
+               <description>{0} must be applied to a property-based statement</description>
+               <![CDATA[self.base_Class.extension_PropertyBasedStatement <> null]]>
+            </constraint>
+            <constraint id="TimedInstantObservationConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="ContainedInTimedDomainNamespace" severity="ERROR" statusCode="4">
+               <message>{0} must be contained in a namespace stereotyped by TimedDomain</message>
+               <description>{0} must be contained in a namespace stereotyped by TimedDomain</description>
+               <![CDATA[self.base_Class.namespace.extension_TimedDomain <> null]]>
+            </constraint>
+            <constraint id="FormalizationConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RequirementClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a requirement as client</message>
+               <description>{0} must have a requirement as client</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement <> null)]]>
+            </constraint>
+            <constraint id="FormalizationConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencySupplierIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one supplier</message>
+               <description>{0} must have exactly one supplier</description>
+               <![CDATA[self.base_Dependency.supplier -> size() = 1]]>
+            </constraint>
+            <constraint id="FormalizationConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencyClientIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one client</message>
+               <description>{0} must have exactly one client</description>
+               <![CDATA[self.base_Dependency.client -> size() = 1]]>
+            </constraint>
+            <constraint id="ConditionConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="PropertyBasedStatementClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a propert-based statement as client</message>
+               <description>{0} must have a propert-based statement as client</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement <> null)]]>
+            </constraint>
+            <constraint id="ConditionConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencySupplierIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one supplier</message>
+               <description>{0} must have exactly one supplier</description>
+               <![CDATA[self.base_Dependency.supplier -> size() = 1]]>
+            </constraint>
+            <constraint id="ConditionConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencyClientIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one client</message>
+               <description>{0} must have exactly one client</description>
+               <![CDATA[self.base_Dependency.client -> size() = 1]]>
+            </constraint>
+            <constraint id="PredicateConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="PropertyBasedStatementClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a propert-based statement as client</message>
+               <description>{0} must have a propert-based statement as client</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_PropertyBasedStatement <> null)]]>
+            </constraint>
+            <constraint id="PredicateConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencySupplierIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one supplier</message>
+               <description>{0} must have exactly one supplier</description>
+               <![CDATA[self.base_Dependency.supplier -> size() = 1]]>
+            </constraint>
+            <constraint id="PredicateConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencyClientIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one client</message>
+               <description>{0} must have exactly one client</description>
+               <![CDATA[self.base_Dependency.client -> size() = 1]]>
+            </constraint>
+            <constraint id="TraceConstraint1" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencyClientIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one client</message>
+               <description>{0} must have exactly one client</description>
+               <![CDATA[self.base_Dependency.client -> size() = 1]]>
+            </constraint>
+            <constraint id="TraceConstraint2" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="DependencySupplierIsUnique" severity="ERROR" statusCode="2">
+               <message>{0} must have exactly one supplier</message>
+               <description>{0} must have exactly one supplier</description>
+               <![CDATA[self.base_Dependency.supplier -> size() = 1]]>
+            </constraint>
+            <constraint id="TraceConstraint3" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" name="RequirementClient" severity="ERROR" statusCode="2">
+               <message>{0} must have a client stereotyped by a subtype of Requirement</message>
+               <description>{0} must have a client stereotyped by a subtype of Requirement</description>
+               <![CDATA[self.base_Dependency.client -> exists(c | c.oclIsKindOf(Class) and c.oclAsType(Class).extension_Requirement <> null)]]>
+            </constraint>
+         </constraints>
+      </constraintProvider>
+   </extension>
+   <extension name="dsml.validation.generated.spec" point="org.eclipse.emf.validation.constraintBindings">
+      <clientContext id="SystemRequirementClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.SystemRequirementClientSelector"/>
+      </clientContext>
+      <binding context="SystemRequirementClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.CoupledConstraint1"/>
+      </binding>
+      <clientContext id="RefineReqtClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.RefineReqtClientSelector"/>
+      </clientContext>
+      <binding context="RefineReqtClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.RefineReqtConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RefineReqtConstraint2"/>
+      </binding>
+      <clientContext id="CopyClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.CopyClientSelector"/>
+      </clientContext>
+      <binding context="CopyClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.CopyConstraint1"/>
+      </binding>
+      <clientContext id="ConditionClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.ConditionClientSelector"/>
+      </clientContext>
+      <binding context="ConditionClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.ConditionConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.ConditionConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.ConditionConstraint1"/>
+      </binding>
+      <clientContext id="HighLevelRequirementClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.HighLevelRequirementClientSelector"/>
+      </clientContext>
+      <binding context="HighLevelRequirementClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.HLRConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.HLRConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.HLRConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.HLRConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.CopyConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.CoupledConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.DeriveConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RefineReqtConstraint3"/>
+      </binding>
+      <clientContext id="LowLevelRequirementClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.LowLevelRequirementClientSelector"/>
+      </clientContext>
+      <binding context="LowLevelRequirementClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.LLRConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.LLRConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.CoupledConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.DeriveConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RefineReqtConstraint4"/>
+      </binding>
+      <clientContext id="PredicateClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.PredicateClientSelector"/>
+      </clientContext>
+      <binding context="PredicateClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.PredicateConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PredicateConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PredicateConstraint1"/>
+      </binding>
+      <clientContext id="TimedDurationConstraintClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.TimedDurationConstraintClientSelector"/>
+      </clientContext>
+      <binding context="TimedDurationConstraintClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.TimedDurationConstraintConstraint1"/>
+      </binding>
+      <clientContext id="TraceClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.TraceClientSelector"/>
+      </clientContext>
+      <binding context="TraceClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.TraceConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.TraceConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.TraceConstraint3"/>
+      </binding>
+      <clientContext id="PropertyBasedStatementClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.PropertyBasedStatementClientSelector"/>
+      </clientContext>
+      <binding context="PropertyBasedStatementClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint5"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint5"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PropertyBasedStatementConstraint6"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.ConditionConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.PredicateConstraint4"/>
+      </binding>
+      <clientContext id="TimedInstantObservationClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.TimedInstantObservationClientSelector"/>
+      </clientContext>
+      <binding context="TimedInstantObservationClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.TimedInstantObservationConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.TimedInstantObservationConstraint2"/>
+      </binding>
+      <clientContext id="FormalizationClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.FormalizationClientSelector"/>
+      </clientContext>
+      <binding context="FormalizationClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.FormalizationConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.FormalizationConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.FormalizationConstraint1"/>
+      </binding>
+      <clientContext id="DeriveClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.DeriveClientSelector"/>
+      </clientContext>
+      <binding context="DeriveClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.DeriveConstraint1"/>
+      </binding>
+      <clientContext id="TimedEventClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.TimedEventClientSelector"/>
+      </clientContext>
+      <binding context="TimedEventClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.TimedEventConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.TimedEventConstraint2"/>
+      </binding>
+      <clientContext id="RequirementClientContext">
+         <selector class="ca.ets.sofeess.specml.validation.selectors.RequirementClientSelector"/>
+      </clientContext>
+      <binding context="RequirementClientContext">
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint1"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint3"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint5"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint6"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint7"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint8"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.CopyConstraint2"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.FormalizationConstraint4"/>
+         <constraint ref="ca.ets.sofeess.specml.validation.RequirementConstraint9"/>
+      </binding>
+   </extension>
+</plugin>
